@@ -1,0 +1,55 @@
+	<footer id="footer" class="footer">
+
+		<div class="center clr">
+
+			<ul class="footer__item footer__item--menu">
+				<li>Продукция</li>
+				<li><a href="">Downdraft</a></li>
+				<li><a href="">Потолочные</a></li>
+				<li><a href="">Настенные</a></li>
+				<li><a href="">Островные</a></li>
+				<li><a href="">Встраиваемые</a></li>
+				<li><a href="">Аксессуары</a></li>
+			</ul>
+
+			<ul class="footer__item footer__item--menu">
+				<li>Меню</li>
+				<li><a href="">Познакомьтесь с Sirius</a></li>
+				<li><a href="">Контакты</a></li>
+				<li><a href="">Сервис</a></li>
+				<li><a href="">Где купить</a></li>
+			</ul>
+
+			<ul class="footer__item footer__item--contact">
+				<li>Контакты</li>
+				<li>г. Москва <br>ул. Тверская 27-Б, офис 12 <a href="tel:+79166184343">+7 (916) 618-43-43</a></li>
+				<li>г. Санкт-Петербург <br>ул. Садовая 69, офис 32 <br><a href="tel:+79166184343">+7 (916) 618-43-43</a></li>
+				<li><a href="mailto:contact@sirius.brand">contact@sirius.brand</a></li>
+			</ul>
+
+			<div class="footer__item footer__item--group">
+
+				<a href="/" class="logo"></a>
+
+				<p>© 2014 Sirius Brand. Все права защищены</p>
+
+				<ul class="social-group clr">
+					<li class="social-group-item social-group-item--vk"><a href="/" target="_blank" rel="nofollow"></a></li>
+					<li class="social-group-item social-group-item--fb"><a href="/" target="_blank" rel="nofollow"></a></li>
+					<li class="social-group-item social-group-item--tw"><a href="/" target="_blank" rel="nofollow"></a></li>
+					<li class="social-group-item social-group-item--li"><a href="/" target="_blank" rel="nofollow"></a></li>
+					<li class="social-group-item social-group-item--pi"><a href="/" target="_blank" rel="nofollow"></a></li>
+					<li class="social-group-item social-group-item--ig"><a href="/" target="_blank" rel="nofollow"></a></li>
+				</ul>
+
+			</div>
+
+		</div>
+
+	</footer>
+
+	<script defer src="/js/jquery.min.js"></script>
+	<script defer src="/js/js.js"></script>
+
+</body>
+</html>

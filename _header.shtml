@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title><!--#echo var="title" --></title>
+	<meta charset="utf-8">
+	<link href="/css/default.css" rel="stylesheet">
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/media.css" rel="stylesheet">
+	<link href="/favicon.png" rel="apple-touch-icon-precomposed">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+</head>
+
+<body class="<!--#echo var=page -->">
+
+	<header id="header" class="center header clr">
+
+		<a class="logo pull-left" href="/"></a>
+
+		<form class="header__search pull-right">
+
+			<label class="ico ico--search"><input type="submit" class="hide"></label>
+
+			<div class="hide">
+				<h4 class="h4">Что ищете</h4>
+				<input class="input" placeholder="Введите ключевое слово…">
+				<ul class="">
+					<li><a>Downdraft</a></li>
+					<li><a>Потолочные</a></li>
+					<li><a>Настенные</a></li>
+					<li><a>Встраиваемые</a></li>
+					<li><a>Аксессуары</a></li>
+					<li><a>Островные</a></li>
+					<li><a>Эксклюзив</a></li>
+				</ul>
+			</div>
+
+		</form>
+
+		<nav class="header__menu pull-right">
+
+			<ul class="menu-top">
+
+				<li><a href="">Познакомьтесь с SIRIUS</a></li>
+				<li><a class="menu-cat-show" href="">Продукция</a></li>
+				<li><a href="">Контакты</a></li>
+				<li><a href="">Сервис</a></li>
+				<li><a href="">Где купить</a></li>
+
+			</ul>
+
+			<ul class="menu-cat">
+
+				<li>
+					<a href="">
+						Downdraft
+						<img src="img/cat-1.jpg" alt="">
+						<i class="ico ico--arrow-right-red"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Потолочные
+						<img src="img/cat-2.jpg" alt="">
+						<i class="ico ico--arrow-right-red"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Настенные
+						<img src="img/cat-3.jpg" alt="">
+						<i class="ico ico--arrow-right-red"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Островные
+						<img src="img/cat-4.jpg" alt="">
+						<i class="ico ico--arrow-right-red"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Встраиваемые
+						<img src="img/cat-5.jpg" alt="">
+						<i class="ico ico--arrow-right-red"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						Аксессуары
+						<img src="img/cat-6.jpg" alt="">
+						<i class="ico ico--arrow-right-red"></i>
+					</a>
+				</li>
+
+			</ul>
+
+		</nav>
+
+	</header>
