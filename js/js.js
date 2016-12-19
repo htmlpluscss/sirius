@@ -196,4 +196,17 @@ http://htmlpluscss.ru
 
 	$('[data-alert-up]').alertUp();
 
+
+// input-box
+	$('.input-box__input').on({
+		focus: function(){
+			$(this).addClass('input-box__input--active');
+		},
+		change: function(){
+			$(this).toggleClass('input-box__input--active', $(this).val().length!="");
+		},
+		blur: function(){
+			$(this).toggleClass('input-box__input--active', $(this).val().length!="");
+		}
+	})
 })(jQuery);

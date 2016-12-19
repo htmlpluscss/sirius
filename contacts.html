@@ -60,8 +60,7 @@
 
 							<h3 class="h3">Обратная связь</h3>
 
-							<div class="select">
-
+							<div class="select select--input-box">
 								<select>
 									<option value="none">Область запроса</option>
 									<option value="1">Техподдержка</option>
@@ -70,7 +69,6 @@
 									<option value="4">Вопрос</option>
 									<option value="0">Другое</option>
 								</select>
-
 							</div>
 
 							<label class="input-box">
@@ -78,22 +76,26 @@
 								<span class="input-box__label">ФИО</span>
 							</label>
 
-							<label class="input-box">
-								<input class="input-box__input input" required="required">
-								<span class="input-box__label" type="tel">Телефон</span>
-							</label>
+							<div class="clr">
+
+								<label class="input-box input-box--w50 pull-left">
+									<input class="input-box__input input" required="required">
+									<span class="input-box__label" type="tel">Телефон</span>
+								</label>
+
+								<label class="input-box input-box--w50 pull-right">
+									<input class="input-box__input input" required="required">
+									<span class="input-box__label" type="email">E-mail</span>
+								</label>
+
+							</div>
 
 							<label class="input-box">
-								<input class="input-box__input input" required="required">
-								<span class="input-box__label" type="email">E-mail</span>
-							</label>
-
-							<label class="input-box">
-								<textarea class="input"></textarea>
+								<textarea class="input-box__input input"></textarea>
 								<span class="input-box__label">Комментарий</span>
 							</label>
 
-							<label class="btn">Отправить<input type="submit"></label>
+							<label class="btn pull-right">Отправить<input type="submit"></label>
 
 						</form>
 
