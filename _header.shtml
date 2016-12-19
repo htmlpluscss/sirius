@@ -19,7 +19,7 @@
 
 		<form class="header__search pull-right">
 
-			<label class="ico ico--search"><input type="submit" class="hide"></label>
+			<a class="ico ico--search"></a>
 
 			<div class="hide">
 				<h4 class="h4">Что ищете</h4>
@@ -41,9 +41,9 @@
 
 			<ul class="menu-top">
 
-				<li><a href="">Познакомьтесь с SIRIUS</a></li>
-				<li><a class="menu-cat-show" href="">Продукция</a></li>
-				<li><a href="">Контакты</a></li>
+				<li><a href="about.html">Познакомьтесь с SIRIUS</a></li>
+				<li class="menu-cat-show"><a>Продукция</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
 				<li><a href="">Сервис</a></li>
 				<li><a href="">Где купить</a></li>
 

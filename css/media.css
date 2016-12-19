@@ -6,6 +6,12 @@
 	display: block;
 }
 
+/* 1500
+----------------------------------------*/
+@media only screen and (max-width:1500px){
+
+}
+
 /* 960
 ----------------------------------------*/
 @media only screen and (max-width:959px){
