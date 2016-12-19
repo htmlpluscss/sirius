@@ -1,0 +1,30 @@
+		<div class="alert_up flexbox flexbox--center flexbox--column flexbox--align-center">
+
+			<div class="alert_up__window alert_up__window--search">
+
+				<div class="alert_up__search-form">
+
+					<form class="search-form">
+
+						<h4 class="h4">Что ищете</h4>
+						<input class="input" placeholder="Введите ключевое слово…">
+
+						<ul class="search-form_list clr">
+							<li><a>Downdraft</a></li>
+							<li><a>Потолочные</a></li>
+							<li><a>Настенные</a></li>
+							<li class="clear-both"><a>Встраиваемые</a></li>
+							<li><a>Аксессуары</a></li>
+							<li class="clear-both"><a>Островные</a></li>
+							<li><a>Эксклюзив</a></li>
+						</ul>
+
+					</form>
+
+					<a class="ico ico--close alert_up__close"></a>
+
+				</div>
+
+			</div>
+
+		</div>

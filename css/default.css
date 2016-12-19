@@ -93,13 +93,16 @@ textarea.input {
 	opacity: .5;
 }
 .input:focus::-moz-placeholder {
-	opacity: 0;
+	color: #9b9b9b;
+	opacity: .7;
 }
 .input:focus:-ms-input-placeholder {
-	opacity: 0;
+	color: #9b9b9b;
+	opacity: .7;
 }
 .input:focus::-webkit-input-placeholder {
-	opacity: 0;
+	color: #9b9b9b;
+	opacity: .7;
 }
 .input::-ms-clear {
 	display: none
@@ -141,10 +144,10 @@ table {
 	width: 14px;
 }
 .ico--close {
-	top: 10px;
-	right: 10px;
+	top: 40px;
+	right: 40px;
 	left: auto;
-	background-position: -420px -614px
+	background-position: -456px -36px
 }
 .ico--search {
 	background-position: -244px -34px;
@@ -218,7 +221,9 @@ hr {
 .align-right {
 	text-align: right;
 }
-
+.clear-both {
+	clear: both;
+}
 
 .notsel {
 	-moz-user-select: none;
@@ -240,6 +245,14 @@ hr {
 	font-size: 20px;
 	line-height: 27px;
 	font-weight: 400;
+}
+.h4 {
+	color: #050505;
+	line-height: 16px;
+	font-weight: 400;
+	font-size: 12px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
 }
 
 .menu-cat .ico {

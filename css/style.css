@@ -667,3 +667,84 @@ body {
 .social-group-item--ig {
 	background-position: -228px -118px
 }
+
+/* alert
+-----------------------------------------------------------------------------*/
+.alert_up {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 11;
+	height: 0;
+	overflow: hidden;
+	padding: 0 30px;
+	background-color: rgba(255,255,255,.98);
+}
+.body--alert_up__show {
+	overflow: hidden;
+}
+.body--alert_up__show .alert_up {
+	height: 100%;
+	overflow-y: auto;
+}
+.alert_up__window {
+	width: 540px;
+	max-width: 100%;
+	position:absolute;
+	top: -9999px;
+	left: 0;
+	margin: 20px auto;
+	background: #fff;
+}
+.alert_up__window--active {
+	position: static;
+}
+.alert_up__box {
+	position: relative;
+	padding: 10px;
+}
+
+.scroolbarwidth {
+	width:100px;
+	height:100px;
+	overflow:scroll;
+	position: absolute;
+	top: -200px;
+	left: 0;
+}
+.scroolbarwidth p {
+	height:100px;
+}
+
+.alert_up__window--search {
+	width: 506px;
+	padding: 0;
+	background: none;
+}
+.alert_up__search-form .input {
+	margin: 14px 0;
+	height: 48px;
+	line-height: 48px;
+	font-size: 30px;
+	font-weight: 300;
+	padding: 0;
+	border: 0;
+	letter-spacing: 0;
+	background: none;
+}
+.search-form_list li {
+	float: left;
+	margin: 3px 10px 7px 0;
+}
+.search-form_list a {
+	height: 40px;
+	display: block;
+	border-radius: 2px;
+	border: solid 1px #6b6b6b;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 38px;
+	padding: 0 12px;
+	color: #333;
+}

@@ -10,7 +10,8 @@ http://htmlpluscss.ru
 
 (function($){
 
-	var windowWidth,
+	var showAlertUp,
+		windowWidth,
 		windowHeight,
 		windowScrollTop,
 		resizeTimeoutId,
@@ -146,5 +147,53 @@ http://htmlpluscss.ru
 	};
 
 	$('select').mySelect();
+
+// alert_up
+	$.fn.alertUp = function(){
+
+		var box = $('.alert_up');
+		var windows = box.children();
+
+		var div = $('<div class="scroolbarwidth">');
+		div.append('<p></p>');
+		body.append(div);
+		var w = div.width() - div.children().width();
+		div.remove();
+		if(w>0){
+			var style = $('<style>');
+			style.html('.body--alert_up__scroll{margin-left:-'+w+'px}');
+			box.append(style);
+		}
+
+		box.on('click',function(event){
+			var t = $(event.target);
+			if(t.is('.alert_up') || t.is('.alert_up__close')){
+				windows.removeClass('alert_up__window--active');
+				body.removeClass('body--alert_up__show body--alert_up__scroll');
+			}
+		});
+
+		showAlertUp = function (selector) {
+			var a_up = windows.filter('.alert_up__window--'+selector);
+			body.addClass('body--alert_up__show');
+			body.toggleClass('body--alert_up__scroll', windowHeight < body.height());
+			box.toggleClass('flexbox', windowHeight > a_up.outerHeight());
+			windows.not(a_up).removeClass('alert_up__window--active');
+			a_up.addClass('alert_up__window--active').focus();
+			if(selector == 'search'){
+				a_up.find('.input').focus();
+			}
+		}
+
+		return this.each(function(){
+			var selector = $(this).attr('data-alert-up');
+			$(this).on('click',function(){
+				showAlertUp(selector);
+			});
+		});
+
+	};
+
+	$('[data-alert-up]').alertUp();
 
 })(jQuery);

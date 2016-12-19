@@ -17,25 +17,11 @@
 
 		<a class="logo pull-left" href="/"></a>
 
-		<form class="header__search pull-right">
+		<div class="header__search pull-right">
 
-			<a class="ico ico--search"></a>
+			<a class="ico ico--search" data-alert-up="search"></a>
 
-			<div class="hide">
-				<h4 class="h4">Что ищете</h4>
-				<input class="input" placeholder="Введите ключевое слово…">
-				<ul class="">
-					<li><a>Downdraft</a></li>
-					<li><a>Потолочные</a></li>
-					<li><a>Настенные</a></li>
-					<li><a>Встраиваемые</a></li>
-					<li><a>Аксессуары</a></li>
-					<li><a>Островные</a></li>
-					<li><a>Эксклюзив</a></li>
-				</ul>
-			</div>
-
-		</form>
+		</div>
 
 		<nav class="header__menu pull-right">
 

@@ -48,6 +48,8 @@
 
 	</footer>
 
+<!--#include file="_alert_up.shtml"-->
+
 	<script defer src="/js/jquery.min.js"></script>
 	<script defer src="/js/js.js"></script>
 
