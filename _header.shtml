@@ -15,7 +15,7 @@
 
 	<header id="header" class="center header clr">
 
-		<a class="logo pull-left" href="/"></a>
+		<a class="logo pull-left" href="/"><img src="/images/logo.svg" alt=""></a>
 
 		<div class="header__search pull-right">
 
@@ -27,9 +27,9 @@
 
 			<ul class="menu-top">
 
-				<li><a href="about.html">Познакомьтесь с SIRIUS</a></li>
-				<li class="menu-cat-show"><a>Продукция</a></li>
-				<li><a href="contacts.html">Контакты</a></li>
+				<li<!--#if expr='$page = about'--> class="menu-top__active"<!--#endif-->><a href="about.html">Познакомьтесь с SIRIUS</a></li>
+				<li class="<!--#if expr='$page = products || $page = product' -->menu-top__active <!--#endif-->menu-cat-show"><a>Продукция</a></li>
+				<li<!--#if expr='$page = contacts'--> class="menu-top__active"<!--#endif-->><a href="contacts.html">Контакты</a></li>
 				<li><a href="">Сервис</a></li>
 				<li><a href="">Где купить</a></li>
 
@@ -38,42 +38,42 @@
 			<ul class="menu-cat">
 
 				<li>
-					<a href="">
+					<a href="products-1.html">
 						Downdraft
 						<img src="img/cat-1.jpg" alt="">
 						<i class="ico ico--arrow-right-red"></i>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="products-1.html">
 						Потолочные
 						<img src="img/cat-2.jpg" alt="">
 						<i class="ico ico--arrow-right-red"></i>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="products-1.html">
 						Настенные
 						<img src="img/cat-3.jpg" alt="">
 						<i class="ico ico--arrow-right-red"></i>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="products-1.html">
 						Островные
 						<img src="img/cat-4.jpg" alt="">
 						<i class="ico ico--arrow-right-red"></i>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="products-1.html">
 						Встраиваемые
 						<img src="img/cat-5.jpg" alt="">
 						<i class="ico ico--arrow-right-red"></i>
 					</a>
 				</li>
 				<li>
-					<a href="">
+					<a href="products-1.html">
 						Аксессуары
 						<img src="img/cat-6.jpg" alt="">
 						<i class="ico ico--arrow-right-red"></i>

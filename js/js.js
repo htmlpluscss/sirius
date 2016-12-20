@@ -208,5 +208,12 @@ http://htmlpluscss.ru
 		blur: function(){
 			$(this).toggleClass('input-box__input--active', $(this).val().length!="");
 		}
-	})
+	});
+
+// product
+	$('.product__img-list img').on('click', function() {
+		$(this).parent().addClass('product__img-list--active').siblings().removeClass('product__img-list--active');
+		$('.product__img-big').children().eq($(this).parent().index()).removeClass('hide').siblings().addClass('hide');
+	});
+
 })(jQuery);
