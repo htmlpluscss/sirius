@@ -235,6 +235,21 @@ table {
 	height: 0;
 	z-index: -1;
 }
+.btn-white {
+	height: 40px;
+	display: block;
+	border-radius: 2px;
+	border: solid 1px #6b6b6b;
+	font-size: 12px;
+	font-weight: 700;
+	line-height: 38px;
+	padding: 0 12px;
+	color: #333;
+}
+.btn-white:hover {
+	background: #333;
+	color: #fff;
+}
 
 hr {
 	background: #6b6b6b;

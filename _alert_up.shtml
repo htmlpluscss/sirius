@@ -10,13 +10,13 @@
 						<input class="input" placeholder="Введите ключевое слово…">
 
 						<ul class="search-form_list clr">
-							<li><a>Downdraft</a></li>
-							<li><a>Потолочные</a></li>
-							<li><a>Настенные</a></li>
-							<li class="clear-both"><a>Встраиваемые</a></li>
-							<li><a>Аксессуары</a></li>
-							<li class="clear-both"><a>Островные</a></li>
-							<li><a>Эксклюзив</a></li>
+							<li><a class="btn-white">Downdraft</a></li>
+							<li><a class="btn-white">Потолочные</a></li>
+							<li><a class="btn-white">Настенные</a></li>
+							<li class="clear-both"><a class="btn-white">Встраиваемые</a></li>
+							<li><a class="btn-white">Аксессуары</a></li>
+							<li class="clear-both"><a class="btn-white">Островные</a></li>
+							<li><a class="btn-white">Эксклюзив</a></li>
 						</ul>
 
 					</form>

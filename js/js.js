@@ -48,7 +48,11 @@ http://htmlpluscss.ru
 // btn hover
 	$('.btn').each(function(){
 		var t = $(this);
+		var submit = t.children('input').clone();
 		t.addClass('data-hover').html('<span class="data-hover__hover">'+t.text()+'</span><span class="data-hover__text">'+t.text()+'</span>');
+		if(submit !== undefined){
+			t.append(submit);
+		}
 	});
 
 // img-cover

@@ -30,7 +30,7 @@
 				<li<!--#if expr='$page = about'--> class="menu-top__active"<!--#endif-->><a href="about.html">Познакомьтесь с SIRIUS</a></li>
 				<li class="<!--#if expr='$page = products || $page = product' -->menu-top__active <!--#endif-->menu-cat-show"><a>Продукция</a></li>
 				<li<!--#if expr='$page = contacts'--> class="menu-top__active"<!--#endif-->><a href="contacts.html">Контакты</a></li>
-				<li><a href="">Сервис</a></li>
+				<li<!--#if expr='$page = service'--> class="menu-top__active"<!--#endif-->><a href="service.html">Сервис</a></li>
 				<li><a href="">Где купить</a></li>
 
 			</ul>
