@@ -17,7 +17,6 @@ http://htmlpluscss.ru
 		resizeTimeoutId,
 		body = $('body'),
 		main = $('.main'),
-		menuCat = $('.menu-cat'),
 		$window = $(window);
 
 	$window.on({
@@ -31,7 +30,7 @@ http://htmlpluscss.ru
 			windowScrollTop = $window.scrollTop();
 
 			if(windowScrollTop > windowHeight / 2){
-				menuCat.removeClass('menu-cat--active');
+				body.removeClass('menu-cat-active');
 				$('.menu-cat-show').removeClass('menu-top--active');
 			}
 		}
@@ -44,6 +43,13 @@ http://htmlpluscss.ru
 	pageResize();
 
 	$window.trigger('scroll');
+
+
+// btn hover
+	$('.btn').each(function(){
+		var t = $(this);
+		t.addClass('data-hover').html('<span class="data-hover__hover">'+t.text()+'</span><span class="data-hover__text">'+t.text()+'</span>');
+	});
 
 // img-cover
 	$('.img-cover').filter('[data-img]').each(function(){
@@ -58,10 +64,9 @@ http://htmlpluscss.ru
 
 // menu
 	$('.menu-cat-show').on('click',function(){
-		menuCat.toggleClass('menu-cat--active');
-		$(this).toggleClass('menu-top--active');
-		$('#header').find('a').not('.menu-cat-show a, .menu-cat a').one('mouseenter',function(){
-			menuCat.removeClass('menu-cat--active');
+		body.toggleClass('menu-cat-active');
+		body.find('a').not('.menu-cat-show a, .menu-cat a').one('mouseenter',function(){
+			body.removeClass('menu-cat-active');
 			$('.menu-cat-show').removeClass('menu-top--active');
 		});
 	});
