@@ -163,11 +163,11 @@
 .block-cat__item:hover {
 	background-size: 105% 105%;
 }
-.block-cat--2 {
+.block-cat__item--2 {
 	top: 200px;
 	background-image: url(/images/block-cat--2.jpg);
 }
-.block-cat--3 {
+.block-cat__item--3 {
 	left: 200px;
 	width: 308px;
 	height: 400px;
@@ -176,25 +176,25 @@
 	background-position: 117px center;
 	background-size: auto 360px
 }
-.block-cat--3:hover {
+.block-cat__item--3:hover {
 	background-position: 106px center;
 	background-size: auto 380px
 }
-.block-cat--4 {
+.block-cat__item--4 {
 	left: 508px;
 	width: 507px;
 	height: 400px;
 	border-color: #85744f;
 	background-image: url(/images/block-cat--4.jpg);
 }
-.block-cat--4 .block-cat__inner {
+.block-cat__item--4 .block-cat__inner {
 	left: auto;
 	width: 200px;
 	height: 200px;
 	background-color: #b20712;
 }
-.block-cat--1:before,
-.block-cat--2:before {
+.block-cat__item--1:before,
+.block-cat__item--2:before {
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -245,23 +245,23 @@
 	left: -20px;
 }
 
-.block-cat--3 .block-cat__title {
+.block-cat__item--3 .block-cat__title {
 	color: #333;
 	width: 130px;
 }
-.block-cat--3 .block-cat__readmore {
+.block-cat__item--3 .block-cat__readmore {
 	left: 38px;
 	color: rgba(107,107,107,.54);
 }
 
-.block-cat--4 .block-cat__title {
+.block-cat__item--4 .block-cat__title {
 	width: 140px;
 }
-.block-cat--4 .block-cat__top {
+.block-cat__item--4 .block-cat__top {
 	text-transform: uppercase;
 	color: rgba(255,255,255,.4);
 }
-.block-cat--4 .block-cat__readmore {
+.block-cat__item--4 .block-cat__readmore {
 	color: rgba(255,255,255,.3);
 }
 
@@ -270,10 +270,6 @@
 .map-address {
 	padding: 80px 0;
 	position: relative;
-}
-.map-address__address {
-	width: 300px;
-	float: right;
 }
 .map-address__img {
 	position: absolute;
@@ -376,7 +372,7 @@
 }
 .cat-img3__item {
 	float: left;
-	width: 33.3%;
+	width: 33.3333%;
 }
 .cat-img3__item:nth-child(4) {
 	clear: left;
@@ -502,9 +498,6 @@
 -----------------------------------------------------------------------------*/
 .contacts__body {
 	padding: 80px 0;
-}
-.contacts__block {
-	width: 300px;
 }
 .contacts__form {
 	width: 655px;

@@ -76,14 +76,17 @@ http://htmlpluscss.ru
 	});
 
 // map-address__marker
+	$('#map-address').on('change',function(){
+		$('.contact-block--' + $(this).val()).removeClass('hide').siblings().addClass('hide');
+	});
 	$('.map-address__marker').on('click',function(){
-		$('.contact-block--' + $(this).attr('data-mod')).removeClass('hide').siblings().addClass('hide');
+		$('#map-address').val($(this).attr('data-mod')).trigger('change');
 		$(this).addClass('map-address__marker--active').siblings().removeClass('map-address__marker--active');
 	});
 
-//	$('.menu-mobile-toggle').on('click',function(){
-//		$('#header').toggleClass('header--menu-show');
-//	});
+	$('.menu-mobile-toggle').on('click',function(){
+		$('#header').toggleClass('header--menu-show');
+	});
 
 // tabs
 	$.fn.tabs = function(){

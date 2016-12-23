@@ -17,13 +17,13 @@
 
 		<a class="logo pull-left" href="/"><img src="/images/logo.svg" alt=""></a>
 
-		<div class="header__search pull-right">
+		<div class="header__search pull-right hidden-sm">
 
 			<a class="ico ico--search" data-alert-up="search"></a>
 
 		</div>
 
-		<nav class="header__menu pull-right">
+		<nav class="header__menu pull-right hidden-sm">
 
 			<ul class="menu-top">
 
@@ -83,5 +83,7 @@
 			</ul>
 
 		</nav>
+
+		<a class="menu-mobile-toggle"><i class="menu-mobile-toggle__line"></i></a>
 
 	</header>

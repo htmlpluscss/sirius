@@ -327,6 +327,9 @@ hr {
 .w100p {
 	width: 100%;
 }
+.w300 {
+	width: 300px;
+}
 .w495 {
 	width: 495px;
 }

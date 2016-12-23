@@ -15,34 +15,34 @@
 
 					</div>
 
-					<a class="ico ico--arrow-down scroll-next"></a>
+					<a class="ico ico--arrow-down scroll-next hidden-sm"></a>
 
 				</div>
 
 				<div class="block-cat">
 
-					<ul class="center">
+					<ul class="center clr center--sm">
 
-						<li class="block-cat__item block-cat--1">
+						<li class="block-cat__item block-cat__item--1">
 							<a href="" class="block-cat__link">
 								<span class="block-cat__title">Придайте своей кухне вкуса!</span>
 								<span class="block-cat__readmore">читать</span>
 							</a>
 						</li>
-						<li class="block-cat__item block-cat--2">
+						<li class="block-cat__item block-cat__item--2">
 							<a href="" class="block-cat__link">
 								<span class="block-cat__title">Новая коллекция уже в России</span>
 								<span class="block-cat__readmore">смотреть</span>
 							</a>
 						</li>
-						<li class="block-cat__item block-cat--3">
+						<li class="block-cat__item block-cat__item--3">
 							<a href="" class="block-cat__link">
 								<span class="block-cat__title">Официальный каталог продукции</span>
 								<span class="block-cat__top">2015</span>
 								<span class="block-cat__readmore"><i class="ico ico--arrow-right-gray"></i>читать</span>
 							</a>
 						</li>
-						<li class="block-cat__item block-cat--4">
+						<li class="block-cat__item block-cat__item--4">
 							<a href="" class="block-cat__link">
 								<span class="block-cat__inner">
 									<span class="block-cat__title">На весь товар скидки от 30% до 80%</span>
@@ -56,18 +56,27 @@
 
 				</div>
 
-				<div class="map-address center clr">
+				<div class="map-address center clr center--sm">
 
-					<img class="map-address__img" src="/images/map.svg" alt="">
+					<img class="map-address__img hidden-xs" src="/images/map.svg" alt="">
 
-					<a class="map-address__marker map-address--moskau map-address__marker--active" data-mod="moskau"></a>
-					<a class="map-address__marker map-address--piter" data-mod="piter"></a>
+					<a class="map-address__marker map-address--moskau map-address__marker--active hidden-xs" data-mod="moskau"></a>
+					<a class="map-address__marker map-address--piter hidden-xs" data-mod="piter"></a>
 
-					<div class="map-address__address">
+					<div class="visible-xs map-address__select">
+						<div class="select">
+							<select id="map-address">
+								<option value="moskau">Москва</option>
+								<option value="piter">Санкт-Петербург</option>
+							</select>
+						</div>
+					</div>
+
+					<div class="map-address__address pull-right w300 xs-float-none xs-w100p">
 
 						<div class="contact-block contact-block--moskau">
 
-							<h3 class="contact-block__title h3">Москва</h3>
+							<h3 class="contact-block__title h3 hidden-xs">Москва</h3>
 
 							<p class="contact-block__text">
 								<span class="contact-block__label">Адрес</span>
@@ -90,7 +99,7 @@
 
 						<div class="contact-block contact-block--piter hide">
 
-							<h3 class="contact-block__title h3">Санкт-Петербург</h3>
+							<h3 class="contact-block__title h3 hidden-xs">Санкт-Петербург</h3>
 
 							<p class="contact-block__text">
 								<span class="contact-block__label">Адрес</span>
