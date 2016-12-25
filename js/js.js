@@ -55,24 +55,28 @@ http://htmlpluscss.ru
 		}
 	});
 
+// scroll-next
+	$('.scroll-next').on('click',function(){
+		$('html, body').animate({'scrollTop': windowHeight}, 1000);
+	});
+
+
 // img-cover
 	$('.img-cover').filter('[data-img]').each(function(){
 		var src = $(this).attr('data-img');
 		$(this).css('background-image','url('+src+')');
 	});
 
-// scroll-next
-	$('.scroll-next').on('click',function(){
-		$('html, body').animate({'scrollTop': windowHeight}, 1000);
-	});
-
 // menu
 	$('.menu-cat-show').on('click',function(){
-		body.toggleClass('menu-cat-active');
-		body.find('a').not('.menu-cat-show a, .menu-cat a').one('mouseenter',function(){
-			body.removeClass('menu-cat-active');
-			$('.menu-cat-show').removeClass('menu-top--active');
-		});
+		if($('.menu-cat').css('display')!='none'){
+			body.toggleClass('menu-cat-active');
+			body.find('a').not('.menu-cat-show a, .menu-cat a').one('mouseenter',function(){
+				body.removeClass('menu-cat-active');
+				$('.menu-cat-show').removeClass('menu-top--active');
+			});
+			return false;
+		}
 	});
 
 // map-address__marker
@@ -234,7 +238,7 @@ http://htmlpluscss.ru
 // product
 	$('.product__img-list img').on('click', function() {
 		$(this).parent().addClass('product__img-list--active').siblings().removeClass('product__img-list--active');
-		$('.product__img-big').children().eq($(this).parent().index()).removeClass('hide').siblings().addClass('hide');
+		$('.product__img-big').children().eq($(this).parent().index()).addClass('product__img-big__active').siblings().removeClass('product__img-big__active');
 	});
 
 })(jQuery);

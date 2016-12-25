@@ -50,6 +50,9 @@
 
 <!--#include file="_alert_up.shtml"-->
 
+	<link href="/css/style.css" rel="stylesheet">
+	<link href="/css/media.css" rel="stylesheet">
+
 	<script defer src="/js/jquery.min.js"></script>
 	<script defer src="/js/js.js"></script>
 

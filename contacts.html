@@ -2,109 +2,109 @@
 <!--#set var="page" value="contacts" -->
 <!--#include file="_header.shtml"-->
 
-		<main class="main">
+	<main class="main">
 
-			<article>
+		<article>
 
-				<div class="img-cover" data-img="images/contacts.jpg">
+			<div class="img-cover">
 
-					<div class="center">
+				<div class="center">
 
-						<h1 class="h1">Контакты</h1>
+					<h1 class="h1">Контакты</h1>
+
+				</div>
+
+			</div>
+
+			<div class="breadcrumbs">
+
+				<ul class="center clr">
+					<li><a href="/">Главная</a></li>
+					<li>Контакты</li>
+				</ul>
+
+			</div>
+
+			<div class="contacts__body center clr center--sm">
+
+				<div class="contacts__block pull-left w300 xs-float-none xs-w100p">
+
+					<div class="contact-block">
+
+						<h3 class="contact-block__title h3">Москва</h3>
+
+						<p class="contact-block__text">
+							<span class="contact-block__label">Адрес</span>
+							ул. Тверская 27-Б, офис 12
+						</p>
+
+						<a href="" target="_blank" rel="nofollow" class="contact-block__btn btn">Смотреть на карте</a>
+
+						<p class="contact-block__text">
+							<span class="contact-block__label">Телефон</span>
+							<a class="contact-block__tel" href="tel:+79166184343">+7 (916) 618-43-43</a>
+						</p>
+
+						<p class="contact-block__text">
+							<span class="contact-block__label">Электронная почта</span>
+							<a class="contact-block__mail" href="mailto:contact@sirius.brand">contact@sirius.brand</a>
+						</p>
 
 					</div>
 
 				</div>
 
-				<div class="breadcrumbs">
+				<div class="contacts__form pull-right xs-float-none" id="contacts-form">
 
-					<ul class="center clr">
-						<li><a href="/">Главная</a></li>
-						<li>Контакты</li>
-					</ul>
+					<form novalidate autocomplete="off">
 
-				</div>
+						<h3 class="h3">Обратная связь</h3>
 
-				<div class="contacts__body center clr center--sm">
+						<div class="select select--input-box">
+							<select>
+								<option value="none">Область запроса</option>
+								<option value="1">Техподдержка</option>
+								<option value="2">Сервис</option>
+								<option value="3">Помощь</option>
+								<option value="4">Вопрос</option>
+								<option value="0">Другое</option>
+							</select>
+						</div>
 
-					<div class="contacts__block pull-left w300 xs-float-none xs-w100p">
+						<label class="input-box">
+							<input class="input-box__input input" required="required">
+							<span class="input-box__label">ФИО</span>
+						</label>
 
-						<div class="contact-block">
+						<div class="clr">
 
-							<h3 class="contact-block__title h3">Москва</h3>
+							<label class="input-box input-box--w50 pull-left">
+								<input class="input-box__input input" type="tel" required="required">
+								<span class="input-box__label">Телефон</span>
+							</label>
 
-							<p class="contact-block__text">
-								<span class="contact-block__label">Адрес</span>
-								ул. Тверская 27-Б, офис 12
-							</p>
-
-							<a href="" target="_blank" rel="nofollow" class="contact-block__btn btn">Смотреть на карте</a>
-
-							<p class="contact-block__text">
-								<span class="contact-block__label">Телефон</span>
-								<a class="contact-block__tel" href="tel:+79166184343">+7 (916) 618-43-43</a>
-							</p>
-
-							<p class="contact-block__text">
-								<span class="contact-block__label">Электронная почта</span>
-								<a class="contact-block__mail" href="mailto:contact@sirius.brand">contact@sirius.brand</a>
-							</p>
+							<label class="input-box input-box--w50 pull-right">
+								<input class="input-box__input input" type="email" required="required">
+								<span class="input-box__label">E-mail</span>
+							</label>
 
 						</div>
 
-					</div>
+						<label class="input-box">
+							<textarea class="input-box__input input"></textarea>
+							<span class="input-box__label">Комментарий</span>
+						</label>
 
-					<div class="contacts__form pull-right xs-float-none" id="contacts-form">
+						<label class="btn pull-right xs-float-none">Отправить<input type="submit"></label>
 
-						<form novalidate autocomplete="off">
-
-							<h3 class="h3">Обратная связь</h3>
-
-							<div class="select select--input-box">
-								<select>
-									<option value="none">Область запроса</option>
-									<option value="1">Техподдержка</option>
-									<option value="2">Сервис</option>
-									<option value="3">Помощь</option>
-									<option value="4">Вопрос</option>
-									<option value="0">Другое</option>
-								</select>
-							</div>
-
-							<label class="input-box">
-								<input class="input-box__input input" required="required">
-								<span class="input-box__label">ФИО</span>
-							</label>
-
-							<div class="clr">
-
-								<label class="input-box input-box--w50 pull-left">
-									<input class="input-box__input input" type="tel" required="required">
-									<span class="input-box__label">Телефон</span>
-								</label>
-
-								<label class="input-box input-box--w50 pull-right">
-									<input class="input-box__input input" type="email" required="required">
-									<span class="input-box__label">E-mail</span>
-								</label>
-
-							</div>
-
-							<label class="input-box">
-								<textarea class="input-box__input input"></textarea>
-								<span class="input-box__label">Комментарий</span>
-							</label>
-
-							<label class="btn pull-right xs-float-none">Отправить<input type="submit"></label>
-
-						</form>
-
-					</div>
+					</form>
 
 				</div>
 
-			</article>
+			</div>
 
-		</main>
+		</article>
+
+	</main>
 
 <!--#include file="_footer.shtml"-->

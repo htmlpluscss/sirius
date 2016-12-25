@@ -1,30 +1,30 @@
-		<div class="alert_up flexbox flexbox--center flexbox--column flexbox--align-center">
+	<div class="alert_up flexbox flexbox--center flexbox--column flexbox--align-center">
 
-			<div class="alert_up__window alert_up__window--search">
+		<div class="alert_up__window alert_up__window--search">
 
-				<div class="alert_up__search-form">
+			<div class="alert_up__search-form">
 
-					<form class="search-form">
+				<form class="search-form">
 
-						<h4 class="h4">Что ищете</h4>
-						<input class="input" placeholder="Введите ключевое слово…">
+					<h4 class="h4">Что ищете</h4>
+					<input class="input" placeholder="Введите ключевое слово…">
 
-						<ul class="search-form_list clr">
-							<li><a class="btn-white">Downdraft</a></li>
-							<li><a class="btn-white">Потолочные</a></li>
-							<li><a class="btn-white">Настенные</a></li>
-							<li class="clear-both"><a class="btn-white">Встраиваемые</a></li>
-							<li><a class="btn-white">Аксессуары</a></li>
-							<li class="clear-both"><a class="btn-white">Островные</a></li>
-							<li><a class="btn-white">Эксклюзив</a></li>
-						</ul>
+					<ul class="search-form_list clr">
+						<li><a class="btn-white">Downdraft</a></li>
+						<li><a class="btn-white">Потолочные</a></li>
+						<li><a class="btn-white">Настенные</a></li>
+						<li class="clear-both"><a class="btn-white">Встраиваемые</a></li>
+						<li><a class="btn-white">Аксессуары</a></li>
+						<li class="clear-both"><a class="btn-white">Островные</a></li>
+						<li><a class="btn-white">Эксклюзив</a></li>
+					</ul>
 
-					</form>
+				</form>
 
-					<a class="ico ico--close alert_up__close"></a>
-
-				</div>
+				<a class="ico ico--close alert_up__close"></a>
 
 			</div>
 
 		</div>
+
+	</div>

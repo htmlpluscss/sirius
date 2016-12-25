@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400&subset=latin-ext);
+
 .visible-sm,
 .visible-xs {
 	display: none;
@@ -106,6 +109,33 @@
 	transform: rotate(-225deg);
 }
 
+	.header__menu {
+		position: absolute;
+		top: 60px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		display: none;
+	}
+	.header--menu-show .header__menu {
+		display: block;
+	}
+	.menu-top li {
+		float: none;
+	}
+	.header--menu-show + .main .img-cover.img-cover:before {
+		opacity: 0.8;
+		background-color: #050505;
+	}
+	.header--menu-show + .main .img-cover .center {
+		opacity: 0;
+		z-index: -1;
+	}
+	.menu-cat {
+		display: none;
+	}
+
+
 	.img-cover__prev {
 		left: 20px;
 	}
@@ -113,8 +143,8 @@
 		right: 20px;
 	}
 	.home .img-cover {
-		padding: 10px 20px 0;
-		min-height: 568px;
+		padding: 60px 20px 20px;
+		min-height: 460px;
 	}
 	.block-cat__item {
 		background-size: cover !important;
@@ -171,10 +201,14 @@
 		clear: left !important;
 	}
 
+	.product__body {
+		padding: 40px 20px;
+	}
 	.product__images {
 		width: 360px;
 	}
-	.product__img-big {
+	.product__img-big,
+	.product__img-big li {
 		height: 320px;
 		width: 360px;
 	}
@@ -183,10 +217,13 @@
 		width: 75px;
 	}
 	.product__detals {
-		padding-right: 0;
-		width: 370px;
+		padding: 0 0 0 20px;
+		width: auto;
+		overflow: hidden;
 	}
-
+	.product-tab {
+		padding: 0 20px;
+	}
 	.table-striped td:first-child {
 		width: 142px;
 		font-size: 10px;
@@ -233,15 +270,6 @@
 		padding: 40px 0;
 	}
 
-	.product__body {
-		padding: 20px;
-	}
-	.product__detals {
-		width: 345px;
-	}
-	.product-tab {
-		margin: 0 20px;
-	}
 
 }
 
@@ -287,6 +315,33 @@
 .img-cover .h1 {
 	padding: 0;
 }
+.img-cover .center {
+	height: 240px;
+	padding-top: 30px;
+}
+
+.logo img{
+	width: 120px;
+}
+.header__menu {
+	top: -10px;
+}
+.menu-top a {
+	padding: 14px;
+}
+.header--menu-show .logo {
+	display: none;
+}
+.menu-mobile-toggle {
+	right: -15px;
+	top: -5px;
+}
+.home .header--menu-show .logo {
+	display: block;
+}
+.home .header__menu {
+	top: 100px;
+}
 
 .footer {
 	padding: 50px 0 25px;
@@ -311,6 +366,7 @@
 	vertical-align: top;
 	display: inline-block;
 }
+
 
 .block-cat {
 	padding: 40px 0;
@@ -411,6 +467,11 @@
 	padding: 22px 0 !important;
 	width: auto !important;
 }
+.service .contact-block__text .ico {
+	position: relative;
+	top: -2px;
+	left: 0;
+}
 
 .block-text2__item::before {
 	margin: 20px 0 10px;
@@ -431,8 +492,9 @@
 	top: 20px;
 }
 
+
 .product__body {
-	padding: 10px;
+	padding: 20px;
 }
 .product__images {
 	width: auto;
@@ -448,6 +510,7 @@
 	display: table;
 }
 .product__img-big li {
+	width: auto;
 	height: 260px;
 	display: table-cell;
 }
@@ -455,17 +518,14 @@
 	display: block;
 	float: left;
 	height: 260px;
-	max-width: 300px;
+	max-width: 280px;
 }
 .product__detals {
-	padding-top: 30px;
+	padding: 20px 0 0;
 	width: auto;
 }
 .product__buy {
 	width: 300px;
-}
-.product-tab {
-	margin: 20px 10px;
 }
 .tabs__dt {
 	float: none;
@@ -482,13 +542,18 @@
 }
 .tabs__dt:before {
 	position: absolute;
-	width: 20px;
-	height: 20px;
-	top: 10px;
-	right: 14px;
-	outline:1px solid red;
+	width: 8px;
+	height: 8px;
+	top: 12px;
+	right: 20px;
 	content: '';
-	background: url(/images/sprite.svg) -px -px;
+	border-left: 1px solid #85744f;
+	border-bottom: 1px solid #85744f;
+	-moz-transform: rotate(45deg);
+	-webkit-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(-45deg);
 }
 .tabs__dd {
 	display: none;
@@ -501,10 +566,14 @@
 	color: #fff;
 }
 .tabs__dt--active:before {
-	background-position: 0 0
+	top: 18px;
+	border: 0;
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
 }
 .block-col-2.block-col-2--sep li {
-	padding: 0 10px 10px;
+	padding: 10px 0;
+	margin: 0;
 }
 .block-col-2.block-col-2--sep img {
 	display: none;
@@ -516,9 +585,6 @@
 	padding: 20px 10px;
 }
 
-.img-cover .center {
-	height: 240px;
-}
 
 }
 
@@ -538,5 +604,14 @@
 .cat-img3__item {
 	width: 100%;
 }
+.product-tab .table-striped td:first-child {
+	padding-left: 10px;
+	width: auto;
+}
+.product-tab .table-striped td:last-child {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
 
 }
