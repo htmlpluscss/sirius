@@ -95,17 +95,26 @@ http://htmlpluscss.ru
 			var t = $(this);
 			var dt = t.children('.tabs__dt');
 			var dd = t.children('.tabs__dd');
-			t.append(dd);
-			dt
-			.wrapAll('<div class="tabs__nav clr notsel">')
-			.on('click',function(){
+			var nav = $('<div class="tabs__nav clr notsel hidden-xs">');
+
+			nav.html(dt.clone(true));
+			t.prepend(nav);
+
+			dt.addClass('visible-xs');
+
+			nav.children().on('click',function(){
 				var t = $(this);
 				t.addClass('tabs__dt--active').siblings().removeClass('tabs__dt--active');
-				dd.removeClass('tabs__dd--active').eq(dt.index(t)).addClass('tabs__dd--active');
-			})
-			.filter('.tabs__dt--active').length > 0 ?
-				dt.filter('.tabs__dt--active').triggerHandler('click') :
-				dt.first().triggerHandler('click');
+				dd.removeClass('tabs__dd--active').eq(nav.children().index(t)).addClass('tabs__dd--active');
+			});
+
+			dt.on('click',function(){
+				$(this).toggleClass('tabs__dt--active');
+			});
+
+			nav.children('.tabs__dt--active').length > 0 ?
+				nav.children('.tabs__dt--active').triggerHandler('click') :
+				nav.children().first().triggerHandler('click');
 		}
 
 		return this.each(tab);

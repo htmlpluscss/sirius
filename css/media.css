@@ -171,6 +171,42 @@
 		clear: left !important;
 	}
 
+	.product__images {
+		width: 360px;
+	}
+	.product__img-big {
+		height: 320px;
+		width: 360px;
+	}
+	.product__img-list img {
+		height: 75px;
+		width: 75px;
+	}
+	.product__detals {
+		padding-right: 0;
+		width: 370px;
+	}
+
+	.table-striped td:first-child {
+		width: 142px;
+		font-size: 10px;
+		line-height: 14px;
+	}
+	.product-tab .block-col-2 {
+		padding: 0;
+	}
+	.product-tab .block-col-2 li {
+		float: none;
+		width: auto;
+		overflow: hidden;
+	}
+	.block-col-2--sep::before {
+		display: none;
+	}
+	.block-col-2.block-col-2--sep li {
+		padding-bottom: 30px;
+	}
+
 }
 
 /* 800
@@ -195,6 +231,16 @@
 	}
 	.contacts__body {
 		padding: 40px 0;
+	}
+
+	.product__body {
+		padding: 20px;
+	}
+	.product__detals {
+		width: 345px;
+	}
+	.product-tab {
+		margin: 0 20px;
 	}
 
 }
@@ -372,6 +418,106 @@
 .cat-img3__item {
 	width: 50%;
 	clear: none !important;
+}
+
+.alert_up__search-form .input {
+	font-size: 20px;
+}
+.search-form_list li {
+	clear: none;
+}
+.ico--close {
+	right: 20px;
+	top: 20px;
+}
+
+.product__body {
+	padding: 10px;
+}
+.product__images {
+	width: auto;
+	height: 260px;
+	position: relative;
+	overflow: auto;
+}
+.product__img-big {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 260px;
+	display: table;
+}
+.product__img-big li {
+	height: 260px;
+	display: table-cell;
+}
+.product__img-big img {
+	display: block;
+	float: left;
+	height: 260px;
+	max-width: 300px;
+}
+.product__detals {
+	padding-top: 30px;
+	width: auto;
+}
+.product__buy {
+	width: 300px;
+}
+.product-tab {
+	margin: 20px 10px;
+}
+.tabs__dt {
+	float: none;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 16px;
+	border: solid 1px #85744f;
+	font-size: 14px;
+	font-weight: 300;
+	letter-spacing: .4px;
+	color: #333;
+	position: relative;
+	margin: 10px 0;
+}
+.tabs__dt:before {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 10px;
+	right: 14px;
+	outline:1px solid red;
+	content: '';
+	background: url(/images/sprite.svg) -px -px;
+}
+.tabs__dd {
+	display: none;
+	padding: 0 0 10px
+}
+.tabs__dt--active + .tabs__dd {
+	display: block;
+}
+.tabs__dt--active {
+	color: #fff;
+}
+.tabs__dt--active:before {
+	background-position: 0 0
+}
+.block-col-2.block-col-2--sep li {
+	padding: 0 10px 10px;
+}
+.block-col-2.block-col-2--sep img {
+	display: none;
+}
+.block-col-2 .btn {
+	margin: 0;
+}
+.feedback {
+	padding: 20px 10px;
+}
+
+.img-cover .center {
+	height: 240px;
 }
 
 }
