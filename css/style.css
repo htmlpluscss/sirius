@@ -740,7 +740,7 @@
 	display: none;
 }
 .ruble__symbol:before {
-	content: '₽';
+	content: '\20BD';
 }
 
 /* service
