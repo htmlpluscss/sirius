@@ -57,8 +57,29 @@ header, main, nav, section, article, aside, footer {
 	margin: 0 auto;
 	max-width: 1016px;
 	position: relative;
+	text-align: justify;
 }
-
+.center-text {
+}
+.center-text h3 {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 44px;
+	text-align: center;
+}
+.center-text h6 {
+	color: #b20712;
+	font-size: 16px;
+	text-align: left;
+	font-weight: bold;
+}
+.center-text p {
+	padding-bottom: 20px;
+}
+.center-text span {
+	color: #85744f;
+	font-weight: bold;
+}
 .input,
 .select__value {
 	vertical-align: middle;
@@ -110,9 +131,6 @@ textarea.input {
 
 .hide {
 	display: none;
-}
-.hidden {
-	overflow: hidden;
 }
 
 table {
@@ -468,19 +486,16 @@ hr {
 	opacity: .5
 }
 
-/* page
------------------------------------------------------------------------------*/
-.home .img-cover {
+.img-cover--fullscreen {
 	min-height: 100vh;
 	padding: 152px 0 148px;
-	background-image: url(/images/home.jpg);
 }
-.home .img-cover .center{
+.img-cover--fullscreen .center{
 	padding: 0;
 	height: auto;
 	z-index: 1;
 }
-.home .img-cover p:before {
+.img-cover--fullscreen p::before {
 	content: '';
 	width: 40px;
 	height: 2px;
@@ -488,9 +503,15 @@ hr {
 	display: block;
 	margin: 26px auto 23px;
 }
-.home .img-cover:before {
+.img-cover--fullscreen::before {
 	opacity: .64;
 	background: #050505;
+}
+
+/* page
+-----------------------------------------------------------------------------*/
+.home .img-cover {
+	background-image: url(/images/home.jpg);
 }
 
 

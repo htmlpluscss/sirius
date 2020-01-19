@@ -1,6 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=latin,cyrillic);
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400&subset=latin-ext);
-
 .visible-sm,
 .visible-xs {
 	display: none;
@@ -11,16 +8,20 @@
 
 /* 1440
 ----------------------------------------*/
-@media only screen and (max-width:1440px){
-	.cat-img3__img,
-	.cat-img3__link {
-		height: auto;
-	}
+@media (max-width:1440px){
+
+.cat-img3 {
+	width: 960px;
+}
+.cat-img3__item {
+	width: 50%;
+}
+
 }
 
 /* 1016
 ----------------------------------------*/
-@media only screen and (max-width:1036px){
+@media (max-width:1250px){
 	.hidden-sm {
 		display: none !important;
 	}
@@ -142,9 +143,18 @@
 	.img-cover__next {
 		right: 20px;
 	}
-	.home .img-cover {
+	.img-cover--fullscreen .h1 {
+		margin-bottom: 0;
+	}
+	.img-cover--fullscreen {
 		padding: 60px 20px 20px;
 		min-height: 460px;
+	}
+	.img-cover--fullscreen p {
+		margin-top: 0;
+	}
+	.img-cover--fullscreen p::before {
+		margin: 14px auto;
 	}
 	.block-cat__item {
 		background-size: cover !important;
@@ -248,7 +258,7 @@
 
 /* 800
 ----------------------------------------*/
-@media only screen and (max-width:800px){
+@media (max-width:800px){
 
 	.map-address {
 		overflow: hidden;
@@ -275,7 +285,7 @@
 
 /* 768
 ----------------------------------------*/
-@media only screen and (max-width:767px){
+@media (max-width:767px){
 
 .hidden-xs {
 	display: none !important;
@@ -476,10 +486,7 @@
 .block-text2__item::before {
 	margin: 20px 0 10px;
 }
-.cat-img3__item {
-	width: 50%;
-	clear: none !important;
-}
+
 
 .alert_up__search-form .input {
 	font-size: 20px;
@@ -586,11 +593,15 @@
 }
 
 
+.cat-img3__item {
+	width: 100%;
+}
+
 }
 
 /* 480
 ----------------------------------------*/
-@media only screen and (max-width:479px){
+@media (max-width:479px){
 
 .block-col-2 img {
 	width: 82px;
@@ -601,9 +612,6 @@
 .block-col-2 .h3 {
 	padding: 0;
 }
-.cat-img3__item {
-	width: 100%;
-}
 .product-tab .table-striped td:first-child {
 	padding-left: 10px;
 	width: auto;
@@ -611,7 +619,4 @@
 .product-tab .table-striped td:last-child {
 	padding-left: 10px;
 	padding-right: 10px;
-}
-
-
 }
