@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru" prefix="og: https://ogp.me/ns#">
 <head>
-	<title><!--#echo var="title" --></title>
+	<title>{{ title }}</title>
 	<meta charset="utf-8">
 
 	<link href="/css/style.css" rel="preload" as="style">
@@ -18,7 +18,7 @@
 
 </head>
 
-<body class="<!--#echo var=page -->">
+<body class="{{ page }}">
 
 	<header id="header" class="center header clr">
 
@@ -34,10 +34,10 @@
 
 			<ul class="menu-top">
 
-				<li<!--#if expr='$page = about'--> class="menu-top__active"<!--#endif-->><a href="about.html">Познакомьтесь с SIRIUS</a></li>
-				<li class="<!--#if expr='$page = products || $page = category || $page = product' -->menu-top__active <!--#endif-->menu-cat-show"><a href="products.html">Продукция</a></li>
-				<li<!--#if expr='$page = contacts'--> class="menu-top__active"<!--#endif-->><a href="contacts.html">Контакты</a></li>
-				<li<!--#if expr='$page = service'--> class="menu-top__active"<!--#endif-->><a href="service.html">Сервис</a></li>
+				<li{% if page == 'about' %} class="menu-top__active"{% endif %}><a href="about.html">Познакомьтесь с SIRIUS</a></li>
+				<li class="{% if page == 'products' or page == 'category' or page == 'product' %}menu-top__active {% endif %}menu-cat-show"><a href="products.html">Продукция</a></li>
+				<li{% if page == 'contacts' %} class="menu-top__active"{% endif %}><a href="contacts.html">Контакты</a></li>
+				<li{% if page == 'service' %} class="menu-top__active"{% endif %}><a href="service.html">Сервис</a></li>
 				<li><a href="">Где купить</a></li>
 
 			</ul>

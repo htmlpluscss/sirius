@@ -1,6 +1,7 @@
-<!--#set var="title" value="Сервисные центры Sirius" -->
-<!--#set var="page" value="service" -->
-<!--#include file="_header.shtml"-->
+{% set title = "Сервисные центры Sirius" %}
+{% set page = "service" %}
+
+{% include "_include/header.html" %}
 
 		<main class="main">
 
@@ -58,11 +59,11 @@
 
 						<ul class="clr">
 
-<!--#include file="_service.shtml"-->
-<!--#include file="_service.shtml"-->
-<!--#include file="_service.shtml"-->
-<!--#include file="_service.shtml"-->
-<!--#include file="_service.shtml"-->
+{% include "_include/service.html" %}
+{% include "_include/service.html" %}
+{% include "_include/service.html" %}
+{% include "_include/service.html" %}
+{% include "_include/service.html" %}
 
 						</ul>
 
@@ -76,10 +77,10 @@
 
 						<ul class="clr">
 
-<!--#include file="_service.shtml"-->
-<!--#include file="_service.shtml"-->
-<!--#include file="_service.shtml"-->
-<!--#include file="_service.shtml"-->
+{% include "_include/service.html" %}
+{% include "_include/service.html" %}
+{% include "_include/service.html" %}
+{% include "_include/service.html" %}
 
 						</ul>
 
@@ -93,8 +94,8 @@
 
 						<ul class="clr">
 
-<!--#include file="_service.shtml"-->
-<!--#include file="_service.shtml"-->
+{% include "_include/service.html" %}
+{% include "_include/service.html" %}
 
 						</ul>
 
@@ -104,7 +105,7 @@
 
 				<div class="center">
 
-<!--#include file="_feedback.shtml"-->
+{% include "_include/feedback.html" %}
 
 				</div>
 
@@ -112,4 +113,4 @@
 
 		</main>
 
-<!--#include file="_footer.shtml"-->
+{% include "_include/footer.html" %}
