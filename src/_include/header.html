@@ -3,6 +3,7 @@
 <head>
 	<title>{{ title }}</title>
 	<meta charset="utf-8">
+	<meta name="description" content="Sirius S.P.A. итальянские вытяжки">
 
 	<link href="/css/style.css" rel="preload" as="style">
 	<link href="/js/jquery.min.js" rel="preload" as="script">
@@ -13,6 +14,14 @@
 	<meta name="format-detection" content="telephone=no">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="/css/style.css" rel="stylesheet">
+
+	<meta property="og:locale" content="ru_RU">
+	<meta property="og:site_name" content="{{ site }}">
+	<meta property="og:url" content="{{ url }}/{% if urlPage %}{{ urlPage }}/{% endif %}">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="{{ title }}">
+	<meta property="og:description" content="Sirius S.P.A. итальянские вытяжки">
+	<meta property="og:image" content="{{ url }}/favicon.png">
 
 </head>
 
