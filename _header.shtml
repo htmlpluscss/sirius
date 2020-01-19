@@ -1,12 +1,21 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" prefix="og: https://ogp.me/ns#">
 <head>
 	<title><!--#echo var="title" --></title>
 	<meta charset="utf-8">
-	<link href="/css/default.css" rel="stylesheet">
+
+	<link href="/css/style.css" rel="preload" as="style">
+	<link href="/css/media.css" rel="preload" as="style">
+	<link href="/css/default.css" rel="preload" as="style">
+	<link href="/fonts/open-sans-v17-latin_cyrillic_cyrillic-ext-regular.woff2" rel="preload" as="font">
+	<link href="/js/jquery.min.js" rel="preload" as="script">
+	<link href="/js/js.js" rel="preload" as="script">
+
 	<link href="/favicon.png" rel="apple-touch-icon-precomposed">
 	<meta name="format-detection" content="telephone=no">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/css/default.css" rel="stylesheet">
+
 </head>
 
 <body class="<!--#echo var=page -->">
