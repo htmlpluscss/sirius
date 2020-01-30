@@ -507,7 +507,23 @@ hr {
 	opacity: .64;
 	background: #050505;
 }
-
+.img-cover__icons {
+	display: flex;
+	justify-content: center;
+	margin-top: 24px;
+}
+.img-cover__icons .tooltip {
+	margin: 4px;
+}
+.img-cover__icons .tooltip .hide {
+	bottom: 100%;
+	margin-bottom: 20px;
+	text-align: left;
+}
+.img-cover__icons img {
+	width: 50px;
+	height: 50px;
+}
 /* page
 -----------------------------------------------------------------------------*/
 .home .img-cover {
@@ -2085,6 +2101,10 @@ hr {
 /* 800
 ----------------------------------------*/
 @media (max-width:800px){
+
+	.img-cover__icons {
+		pointer-events: none;
+	}
 
 	.map-address {
 		overflow: hidden;
