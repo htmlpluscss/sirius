@@ -1502,6 +1502,49 @@ hr {
 	margin: 40px 0;
 }
 
+/* text-content
+-----------------------------------------------------------------------------*/
+.text-content {
+	color: #333;
+}
+.text-content p,
+.text-content ul,
+.text-content ol {
+	text-align: justify;
+	margin: 15px 0;
+}
+.text-content ul li {
+	list-style: inside;
+	list-style-type: disc;
+}
+.text-content ol li {
+	list-style: inside;
+	list-style-type: decimal;
+}
+.text-content a {
+	text-decoration: underline;
+}
+.text-content a[href^="tel"],
+.text-content a[href^="mailto"] {
+	text-decoration: none;
+}
+
+.text-content h2,
+.text-content h3,
+.text-content h4 {
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-top: 25px;
+}
+.text-content h3 {
+	font-size: 22px;
+}
+.text-content h4 {
+	font-size: 18px;
+}
+
+
 /* footer
 -----------------------------------------------------------------------------*/
 .footer {
@@ -1975,6 +2018,10 @@ hr {
 	}
 	.input-box--w50 {
 		width: 200px;
+	}
+
+	.text-content {
+		padding: 0 20px;
 	}
 
 	.service__body {
