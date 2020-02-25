@@ -241,4 +241,40 @@ http://htmlpluscss.ru
 		$('.product__img-big').children().eq($(this).parent().index()).addClass('product__img-big__active').siblings().removeClass('product__img-big__active');
 	});
 
+// show-room
+	(function(room){
+
+		if(room){
+
+			var img = room.find('img'),
+				index = 0;
+
+			setInterval(function(){
+
+				img.each(function(i){
+
+					if($(this).hasClass('is-active')){
+
+						$(this).removeClass('is-active');
+
+						index = i+1;
+
+						if(index >= img.length) {
+
+							index = 0;
+
+						}
+
+					}
+
+				});
+
+				img.eq(index).addClass('is-active');
+
+			},5000);
+
+		}
+
+	})($('.show-room'));
+
 })(jQuery);
