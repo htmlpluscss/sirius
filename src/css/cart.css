@@ -1,0 +1,835 @@
+
+
+.btn, .button {
+
+	border: 0;
+	border-radius: 0;
+	font-family: inherit;
+	background-color: transparent;
+	transition: .3s;
+	cursor: pointer;
+	user-select: none;
+	position: relative;
+	font-size: 0;
+	text-align: center;
+	white-space: nowrap
+
+}
+
+.btn:focus, .button:focus {
+  outline: none;
+}
+
+.btn:hover, .button:hover {
+  cursor: pointer;
+}
+
+.btn[disabled], .button[disabled] {
+  pointer-events: none;
+}
+
+
+.input {
+
+	height: 54px;
+	line-height: 24px;
+	padding: 15px 22px;
+	font-size: 16px;
+
+	width: 100%;
+	font-family: inherit;
+	position: relative;
+	appearance: none;
+	display: block;
+	filter: none;
+	-webkit-transform: translateZ(0px); /* FIX for iOS safari https://forum.ionicframework.com/t/ion-input-shows-only-the-first-entered-character-on-ios/73107/5 */
+
+	background-color: #fff;
+	border: 1px solid #dcdcdc;
+	border-radius: 0;
+	color: #000;
+	transition: .3s;
+
+}
+
+textarea.input {
+
+		resize: none;
+		height: 192px;
+		overflow: auto;
+		padding: 20px 23px;
+
+	}
+
+.input:hover {
+  border-color: #919191;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #000;
+}
+
+.input:focus::placeholder {
+  opacity: 0;
+}
+
+.input:disabled {
+  pointer-events: none;
+}
+
+.input--error {
+
+		border-color: #f00 !important;
+
+}
+
+.input:invalid {
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* input-label */
+
+.input-label {
+
+	display: block;
+	width: 100%;
+	position: relative;
+
+}
+
+.input-label__label {
+
+		font-size: 16px;
+		line-height: 22px;
+
+		position: absolute;
+		top: 16px;
+		left: 23px;
+		pointer-events: none;
+		display: flex;
+		transition: .3s;
+
+	}
+
+.input--error + .input-label__label {
+
+			color: #f00;
+
+		}
+
+.input-label__input[required] ~ .input-label__label::after {
+
+		content: '*';
+		color: #b20712;
+
+	}
+
+.input-label__input:focus ~ .input-label__label, .input-label--no-empty .input-label__label {
+
+		top: 0 !important;
+		font-size: 13px !important;
+		color: #000;
+
+	}
+.input-label .input-label__input {
+	padding: 20px 22px 10px
+}
+.input-label__input:focus ~ .input-label__label::after, .input-label--no-empty .input-label__label::after {
+  display: none;
+}
+
+.input-label__text {
+
+		font-size: 12px;
+		display: block;
+		position: relative;
+		top: 5px;
+
+	}
+
+.input-label__text--error {
+
+			color: #f00;
+
+			display: none;
+
+		}
+
+.input-label--error .input-label__input {
+
+		border-color: #f00;
+
+	}
+
+.input-label--error .input-label__text--error {
+
+		display: block;
+
+	}
+
+/* checkbox */
+
+.checkbox {
+
+	display: block;
+	position: relative;
+
+	font-size: 17px;
+	line-height: 27px;
+
+}
+
+.checkbox__input {
+
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		top: 0;
+		left: 0;
+		opacity: 0.001;
+		z-index: -1;
+
+	}
+
+.checkbox__input[disabled="disabled"] ~ .checkbox__label {
+
+		pointer-events: none;
+		color: #cdcdcd !important
+
+	}
+
+.checkbox__input[disabled="disabled"] ~ .checkbox__label::before {
+  border-color: transparent;
+}
+
+.checkbox__label {
+
+		display: block;
+		padding-left: 44px;
+		cursor: pointer;
+}
+
+.checkbox__label::before {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  background-color: #f4f4f4;
+  border: 1px solid #e2e2e2;
+  transition: .3s;
+}
+
+.checkbox__check {
+
+		width: 0;
+		height: 27px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		transition: .3s;
+		transition-property: opacity;
+		opacity: 0;
+}
+
+.checkbox__check svg {
+
+			position: absolute;
+			top: 6px;
+			left: 6px;
+
+		}
+
+.checkbox__input[type="checkbox"]:checked ~ .checkbox__check {
+
+		opacity: 1;
+		width: 27px;
+		transition-property: width;
+}
+
+/* radio */
+
+.checkbox__input[type="radio"] ~ .checkbox__label::before {
+
+		border-radius: 50%;
+}
+
+.checkbox__input[type="radio"] ~ .checkbox__check {
+
+		width: 27px;
+		transform: scale(0);
+}
+
+.checkbox__input[type="radio"] ~ .checkbox__check svg {
+
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+
+		}
+
+.checkbox__input[type="radio"]:checked ~ .checkbox__check {
+
+		opacity: 1;
+		transform: scale(1);
+		transition-property: transform opacity;
+}
+
+.checkbox--error .checkbox__label {
+
+		color: #f00 !important;
+}
+
+.checkbox--error .checkbox__label::before {
+  border-color: #f00 !important;
+}
+
+/* select */
+
+.cart-order .select__li {
+	font-size: 16px;
+}
+.cart-order .select__box ul {
+	max-height: 256px;
+	overflow-y: auto;
+}
+.cart-order .select__value {
+	font-size: 20px;
+	line-height: 38px;
+	padding: 0 34px 0 12px;
+}
+
+/* motor */
+.cart .img-cover {
+	background-image: url(/images/contacts.jpg);
+}
+
+
+.cart__motor-list {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 10px -5px 0;
+}
+.cart__motor-list .radio-btn {
+	margin: 5px;
+}
+.cart__motor-desc {
+	margin: 5px;
+	position: relative;
+}
+.cart__motor-desc.is-ahctung {
+	padding-left: 32px;
+	padding-top: 2px;
+}
+.cart__motor-desc.is-ahctung::before {
+	width: 24px;
+	height: 24px;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: url(/images/sprite.svg) -8px -8px;
+}
+.cart__motor-desc a{
+	text-decoration: underline;
+}
+.cart__motor-desc a:hover{
+	text-decoration: none;
+}
+
+/* cart */
+.cart__head {
+
+		margin: 24px 0;
+}
+
+.cart__head span {
+
+			margin-left: 8px;
+}
+
+.cart .quantity {
+
+		width: 58px;
+		position: relative;
+		display: block;
+}
+
+.cart .quantity__count {
+
+			text-align: center;
+			line-height: 30px;
+			height: 30px;
+			font-size: 18px;
+			border: 0;
+
+		}
+
+.cart .quantity__btn {
+
+			position: absolute;
+			left: 0;
+			width: 20px;
+			top: 0;
+			bottom: 0;
+			font-size: 18px;
+			z-index: 1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+.cart .quantity__btn:hover {
+  color: #000;
+}
+
+.cart .quantity__btn--up {
+
+				left: auto;
+				right: 0;
+}
+
+.cart__item--remove {
+
+			transform: scaleY(0);
+			transition: .3s;
+			opacity: 0;
+
+		}
+
+.cart__item td {
+
+			border-top: 1px solid #e2e0e0;
+			border-bottom: 1px solid #e2e0e0;
+			padding: 35px 0 35px 22px
+
+		}
+
+.cart__item td:first-child {
+  border-left: 1px solid #e2e0e0;
+}
+
+.cart__item td:last-child {
+  border-right: 1px solid #e2e0e0;
+}
+
+.cart__item-shipping {
+
+			font-size: 18px;
+}
+
+.cart__item-price {
+
+			font: 700 20px/26px 'Open Sans';
+			white-space: nowrap;
+}
+
+.cart-card {
+
+		display: flex;
+}
+
+.cart-card__img {
+
+			width: 100px;
+}
+
+.cart-card__text {
+
+			padding-left: 28px;
+}
+
+.cart-card__cat {
+
+			font-size: 15px;
+			line-height: 22px;
+			margin-bottom: 8px;
+
+}
+
+.cart-card__name {
+
+			font: 18px/24px 'Open Sans';
+			margin-bottom: 10px;
+}
+
+.cart-card__availability {
+
+			color: #d6d6d6;
+			font: 15px/20px 'Open Sans';
+			position: relative;
+			padding-left: 10px;
+}
+
+.cart-card__availability.is-available {
+  color: #019107;
+}
+
+.cart-card__availability.is-available::before {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  top: 10px;
+  left: 0;
+  content: '';
+  border-radius: 50%;
+  background-color: #019107;
+}
+
+
+/* list */
+
+.cart-list {
+
+	margin: 0px auto;
+	max-width: 960px;
+	padding: 24px;
+	text-align: left;
+
+		}
+
+.cart-list table {
+
+			width: 100%;
+			border-collapse: separate;
+			border-spacing: 0 14px;
+
+		}
+
+.cart-list thead th {
+
+				text-align: left;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 25px;
+				vertical-align: middle;
+				padding: 0 0 0 22px;
+				white-space: nowrap
+
+			}
+
+.cart-list thead th:first-child {
+  padding-left: 40px;
+}
+
+.cart__col-2 {
+
+			width: 144px;
+
+		}
+
+.cart__col-3 {
+
+			width: 80px;
+
+		}
+
+.cart__col-4 {
+
+			width: 110px;
+
+		}
+
+.cart__col-5 {
+
+			width: 110px;
+
+		}
+
+.cart__col-6 {
+
+			width: 78px;
+			padding: 0 !important;
+			text-align: center;
+
+		}
+
+/* form */
+
+.cart-order {
+
+	margin: 0 auto;
+	max-width: 560px;
+	padding: 24px;
+	text-align: left;
+
+}
+
+.cart-order__delivery {
+
+			display: flex;
+			margin: 42px 0 76px;
+}
+
+.cart-order__delivery .checkbox + .checkbox {
+
+				margin-left: 90px;
+
+			}
+
+.cart-order__input {
+
+			margin: 20px 0;
+}
+
+.cart-order__input--flex {
+
+				display: flex;
+				margin: 30px 0;
+
+			}
+
+.cart-order__input-label {
+
+				font-size: 20px;
+				line-height: 27px;
+				padding-left: 25px;
+				width: 206px;
+}
+
+.cart-order__input-control .checkbox {
+
+					margin-top: 13px
+
+				}
+
+.cart-order__input-control .checkbox:first-child {
+  margin-top: 5px;
+}
+
+.cart-order__input .input-label__label {
+
+				font-size: 20px;
+}
+
+.cart-order .checkbox {
+
+			font-size: 20px;
+}
+
+.cart-order .checkbox__label {
+
+				color: #000;
+
+
+			}
+
+.cart-order .checkbox__label::before {
+  border-color: #dcdcdc;
+  background-color: #fff;
+}
+
+.cart-order .checkbox__check svg {
+
+				fill: #b20712;
+
+
+			}
+
+.cart-order__rules {
+
+			margin-top: 30px;
+}
+
+.cart-order__rules .checkbox__label {
+
+				font-size: 13px;
+
+			}
+
+.cart-order__info-registr {
+
+			font-size: 13px;
+			line-height: 18px;
+			color: #787878;
+			margin: 26px 0;
+}
+
+.cart-order__info-required {
+
+			font-size: 13px;
+			line-height: 18px;
+}
+
+.cart-order__info-required sup {
+
+				color: #b20712;
+
+			}
+
+.cart-order__submit {
+
+			margin: 30px auto 26px;
+			display: block;
+			font-size: 16px;
+			background-color: #85744f;
+}
+
+.cart-order__warehouse-city {
+
+				display: block;
+				font-size: 20px;
+				color: #b20712;
+
+			}
+
+.cart-order__warehouse-addrewss {
+
+				font-size: 18px;
+				display: block;
+
+			}
+
+.cart-order__warehouse-time {
+
+				font-size: 13px;
+				display: block;
+
+			}
+
+.cart-order__text-error {
+
+			font-size: 14px;
+			color: #f00;
+			text-align: center;
+}
+
+
+
+@media (max-width: 1300px) {
+
+
+	.cart-card {
+    display: block;
+  }
+
+	.cart-card__text {
+    padding: 20px 0 0;
+  }
+
+	.cart-card__cat {
+    display: none;
+  }
+
+}
+
+@media (max-width: 1199px) {
+
+		.cart__head {
+    margin: 0;
+  }
+
+		.cart-list table {
+    margin: 0;
+  }
+
+		.cart-order {
+    max-width: 100%;
+  }
+
+}
+
+@media (max-width: 767px) {
+.img-cover .center {
+	height: 240px;
+}
+.cart-order {
+	padding: 0 20px 30px;
+}
+
+	.cart__item td {
+    padding: 0;
+    border: 0 !important;
+  }
+
+	.cart__item-price {
+    font-size: 16px;
+  }
+
+	.cart__item {
+    margin: 20px -20px;
+    padding: 20px;
+    display: flex !important;
+    flex-wrap: wrap;
+    border-top: 1px solid #e2e0e0;
+    border-bottom: 1px solid #e2e0e0;
+  }
+
+	.cart-card {
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+	.cart-card__text {
+    padding: 0 0 0 20px;
+  }
+
+	.cart-card__name {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+
+
+	.cart-list table {
+    display: block;
+  }
+  .cart-list thead {
+  	display: none;
+
+  }
+
+	.cart-list table tbody, .cart-list table tr {
+
+					display: block;
+  }
+
+	.cart-list table [data-label] {
+
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					margin-top: 5px;
+  }
+
+	.cart-list table [data-label]::before {
+    content: attr(data-label);
+    color: #000;
+    font-size: 16px;
+  }
+
+	.cart__col-6 {
+    padding-right: 20px !important;
+  }
+
+	.cart-order__delivery .checkbox + .checkbox {
+    margin: 20px 0;
+  }
+
+	.cart-order__delivery {
+    margin: 20px 0 40px;
+    display: block;
+  }
+
+	.cart-order__input--flex {
+    display: block;
+  }
+
+	.cart-order__input-label {
+    width: auto;
+    padding: 10px 0;
+  }
+
+	.cart-order__rules .checkbox__label {
+    line-height: 20px;
+  }
+
+}

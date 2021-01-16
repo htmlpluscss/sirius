@@ -1,0 +1,68 @@
+		<div class="cart__motor-list">
+
+			<label class="radio-btn">
+				<input class="radio-btn__input" type="radio" name="motor-{{ id }}" value="SEM1" data-price="10000"{% if motor == 'SEM1' %} checked="checked"{% endif %}>
+				<span class="radio-btn__label">
+					Мотор SEM1
+				</span>
+				<span class="radio-btn__desc">
+					Внутренний удаленный мотор SEM1. Разработан для размещения внутри помещения, цена 10 000 рублей. <a href="/" target="_blank">Описание</a>
+				</span>
+			</label>
+
+			<label class="radio-btn">
+				<input class="radio-btn__input" type="radio" name="motor-{{ id }}" value="SEM2" data-price="11000"{% if motor == 'SEM2' %} checked="checked"{% endif %}>
+				<span class="radio-btn__label">
+					Мотор SEM2
+				</span>
+				<span class="radio-btn__desc">
+					Удаленный внешний мотор SEM2. Устанавливается за пределами помещения, цена 11 000 рублей. <a href="/" target="_blank">Описание</a>
+				</span>
+			</label>
+
+			<label class="radio-btn">
+				<input class="radio-btn__input" type="radio" name="motor-{{ id }}" value="SEM10" data-price="12000"{% if motor == 'SEM10' %} checked="checked"{% endif %}>
+				<span class="radio-btn__label">
+					Мотор SEM10
+				</span>
+				<span class="radio-btn__desc">
+					Удаленный мотор SEM10 для вытяжек с системой DrowDraft, цена 12 000 рублей. <a href="/" target="_blank">Описание</a>
+				</span>
+			</label>
+
+			<label class="radio-btn">
+				<input class="radio-btn__input" type="radio" name="motor-{{ id }}" value="SEM12" data-price="13000"{% if motor == 'S-DD' %} checked="checked"{% endif %}>
+				<span class="radio-btn__label">
+					Мотор SEM12
+				</span>
+				<span class="radio-btn__desc">
+					Бесщеточный мотор SEM12, цена 13 000 рублей. <a href="/" target="_blank">Описание</a>
+				</span>
+			</label>
+
+			<label class="radio-btn">
+				<input class="radio-btn__input" type="radio" name="motor-{{ id }}" value="S-DD" data-price="14000"{% if motor == 'S-DD' %} checked="checked"{% endif %}>
+				<span class="radio-btn__label">
+					Мотор S-DD
+				</span>
+				<span class="radio-btn__desc">
+					Внутренний двигатель для вытяжек с нижним отводом воздуха DrowDraft, цена 14 000 рублей. <a href="/" target="_blank">Описание</a>
+				</span>
+			</label>
+
+			<p class="cart__motor-desc{% if motor == 'none' %} is-ahctung{% endif %}">
+
+{% if motor == 'none' %}
+
+				Модель поставляется без мотора! Выберите из возможных вариантов выше
+
+{% else %}
+
+
+				Внутренний удаленный мотор SEM1. Разработан для размещения внутри помещения, цена 10 000 рублей. <a href="/" target="_blank">Описание</a>
+
+{% endif %}
+
+			</p>
+
+		</div>

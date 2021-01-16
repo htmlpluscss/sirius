@@ -1,0 +1,39 @@
+{% set title = "Корзина" %}
+{% set page = "cart" %}
+
+{% include "_include/header.html" %}
+
+	<link href="/css/cart.css" rel="stylesheet">
+	<script defer src="/js/cart.js"></script>
+
+	<main class="main">
+
+		<div class="img-cover">
+
+			<div class="center">
+
+				<h1 class="h1">{{ title }}</h1>
+
+			</div>
+
+		</div>
+
+		<div class="breadcrumbs">
+
+			<ul class="center clr">
+				<li><a href="/">Главная</a></li>
+				<li>{{ title }}</li>
+			</ul>
+
+		</div>
+
+		<div class="center">
+
+{% include "cart/list.html" %}
+{% include "cart/order.html" %}
+
+		</div>
+
+	</main>
+
+{% include "_include/footer.html" %}

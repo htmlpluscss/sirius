@@ -1,0 +1,35 @@
+		<form action="/cart/" novalidate="novalidate" autocomplete="off" class="cart-list">
+
+			<input type="hidden" name="save_before_order" value="123456789">
+
+			<h2 class="cart__head">
+				Шаг 1. <span>Состав заказа</span>
+			</h2>
+
+			<table>
+
+				<thead>
+					<tr>
+						<th class="cart__col-1">Описание товара</th>
+						<th class="cart__col-3">Кол-во</th>
+						<th class="cart__col-4">Цена, руб.</th>
+						<th class="cart__col-5">Сумма, руб.</th>
+						<th class="cart__col-6"></th>
+					</tr>
+				</thead>
+
+{% set id = 364 %}
+{% set motor = "on" %}
+{% include "cart/item.html" %}
+
+{% set id = 254 %}
+{% set motor = "SEM1" %}
+{% include "cart/item.html" %}
+
+{% set id = 102 %}
+{% set motor = "none" %}
+{% include "cart/item.html" %}
+
+			</table>
+
+		</form>
