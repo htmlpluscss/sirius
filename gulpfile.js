@@ -1,3 +1,4 @@
+
 'use strict';
 
 const gulp             = require('gulp');
@@ -15,7 +16,7 @@ const w3cjs            = require('gulp-w3cjs');
 
 const config             = require('./config.json');
 const site             = 'sirius-russia.ru';
-const domain           = 'sr.wndrbase.com';
+const domain           = 'sirius.wndrbase.com';
 
 config.ftp.remotePath += domain;
 

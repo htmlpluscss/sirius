@@ -8,7 +8,7 @@
 	<link href="/css/style.css" rel="preload" as="style">
 	<link href="/js/jquery.min.js" rel="preload" as="script">
 	<link href="/js/js.js" rel="preload" as="script">
-	<link href="/fonts/open-sans-v17-latin_cyrillic_cyrillic-ext-regular.woff2" rel="preload" as="font">
+	<link href="/fonts/open-sans-v17-latin_cyrillic_cyrillic-ext-regular.woff2" rel="preload" as="font" type="font/woff2" crossorigin>
 
 	<link href="/favicon.png" rel="apple-touch-icon-precomposed">
 	<meta name="format-detection" content="telephone=no">
@@ -30,6 +30,12 @@
 	<header id="header" class="center header clr">
 
 		<a class="logo pull-left" href="/"><img src="/images/logo.svg" alt=""></a>
+
+		<div class="header__cart pull-right">
+
+			<a class="ico ico--cart" href="/cart.html" data-counter="1"></a>
+
+		</div>
 
 		<div class="header__search pull-right hidden-sm">
 
