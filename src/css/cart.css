@@ -1,4 +1,124 @@
+.pickmeup {
 
+	position: absolute;
+	touch-action: manipulation;
+	padding-top: 10px
+
+}
+
+.pickmeup.pmu-flat {
+  position:relative;
+}
+
+.pickmeup.pmu-hidden {
+  display:none;
+}
+
+.pickmeup .pmu-instance {
+
+		padding: 16px;
+		text-align:center;
+		width: 320px;
+		border: 1px solid #dcdcdc;
+		background-color: #fff;
+}
+
+.pickmeup nav {
+
+		display: flex;
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 700;
+		margin: 0 8px 12px;
+}
+
+.pickmeup nav .pmu-month {
+
+			flex-grow: 1;
+
+		}
+
+.pickmeup nav .pmu-prev, .pickmeup nav .pmu-next {
+
+			height: 24px;
+			width: 24px;
+			cursor: pointer;
+			fill: #6b6b6b
+
+		}
+
+.pickmeup nav .pmu-prev:hover, .pickmeup nav .pmu-next:hover {
+  fill: #000;
+}
+
+.pickmeup .pmu-day-of-week {
+
+		margin: 0;
+		font-size: 11px;
+		line-height: 32px;
+		color: #6b6b6b;
+		text-transform: uppercase;
+}
+
+.pickmeup .pmu-day-of-week div {
+
+			flex-grow: 1;
+
+		}
+
+.pickmeup .pmu-disabled {
+
+		pointer-events: none;
+		opacity: .5;
+}
+
+.pickmeup .pmu-years, .pickmeup .pmu-months, .pickmeup .pmu-days {
+
+		display: flex;
+		flex-wrap: wrap;
+}
+
+.pickmeup .pmu-years .pmu-button, .pickmeup .pmu-months .pmu-button, .pickmeup .pmu-days .pmu-button {
+
+			line-height: 32px;
+			width: calc(100% / 7);
+			cursor: pointer
+
+		}
+
+.pickmeup .pmu-years .pmu-button.pmu-not-in-month, .pickmeup .pmu-months .pmu-button.pmu-not-in-month, .pickmeup .pmu-days .pmu-button.pmu-not-in-month {
+  color: #6b6b6b;
+}
+
+.pickmeup .pmu-years .pmu-button.pmu-selected, .pickmeup .pmu-months .pmu-button.pmu-selected, .pickmeup .pmu-days .pmu-button.pmu-selected {
+  color: #b20712;
+  font-weight: 700;
+  box-shadow: inset 0 0 0 2px #b20712;
+  border-radius: 50%;
+}
+
+.pickmeup .pmu-years .pmu-button:hover, .pickmeup .pmu-months .pmu-button:hover, .pickmeup .pmu-days .pmu-button:hover {
+  color: #b20712;
+}
+
+.pickmeup .pmu-years .pmu-button, .pickmeup .pmu-months .pmu-button {
+
+			line-height: calc(32px * 7 / 3);
+			width: 25%;
+
+		}
+
+.pickmeup .pmu-today {
+
+		font-weight: 700;
+		color: #000;
+}
+
+.pickmeup:not(.pmu-view-days) .pmu-days, .pickmeup:not(.pmu-view-days) .pmu-day-of-week, .pickmeup:not(.pmu-view-months) .pmu-months, .pickmeup:not(.pmu-view-years) .pmu-years {
+  display:none;
+}
+
+/* end pickmeup */
 
 .btn, .button {
 
