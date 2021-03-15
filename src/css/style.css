@@ -396,7 +396,13 @@ hr {
 }
 
 
-
+.column-2 {
+	display: flex;
+	justify-content: space-between;
+}
+.column-2__item {
+	width: calc(50% - 20px);
+}
 
 
 /* img-cover
@@ -2459,6 +2465,14 @@ hr {
 	top: 20px;
 }
 
+
+.column-2 {
+	display: block;
+}
+.column-2__item {
+	width: auto;
+	margin: 20px 0;
+}
 
 .product__body {
 	padding: 20px;
