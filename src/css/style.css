@@ -2029,6 +2029,11 @@ hr {
 		margin: 9px 60px 0 0;
 	}
 
+	.header__search {
+		margin: 9px 16px 0 0;
+		border: 0;
+	}
+
 .product__price {
 	padding-left: 0;
 }
@@ -2357,6 +2362,9 @@ hr {
 
 .header__cart {
 	margin: 4px 50px 0 0;
+}
+.header__search {
+	margin: 4px 16px 0 0;
 }
 
 .footer {
