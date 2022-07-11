@@ -18,23 +18,24 @@
 						const mainResize = ()=> {
 
 							let w = window.innerWidth,
-								h = window.innerHeight;
-console.log(w,h)
+								h = window.innerHeight,
+								width = w;
+
 							if ( w < 1250 ) {
 
-								w = 1250 / 2.35;
 								h = iframe.parentNode.clientHeight;
+								width = 1250
 
 							}
 
-							if ( h / w < 1 / 2.35 ) {
+							if ( w / h > 2.35 ) {
 
-								iframe.style.width = w + 'px';
+								iframe.style.width = width + 'px';
 								iframe.style.height = w / 16 * 9 + 'px';
 
 							} else {
 
-								iframe.style.width = w * 2.35 + 'px';
+								iframe.style.width = width * 2.35 + 'px';
 								iframe.style.height = h * 9 / 16 * 2.35 + 'px';
 
 							}
