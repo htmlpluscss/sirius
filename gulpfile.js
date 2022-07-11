@@ -16,7 +16,7 @@ const w3cjs            = require('gulp-w3cjs');
 
 const config             = require('./config.json');
 const site             = 'sirius-russia.ru';
-const domain           = 'sirius.wndrbase.com';
+const domain           = 'sirius.htmlpluscss.website';
 
 config.ftp.remotePath += domain;
 
@@ -27,13 +27,11 @@ gulp.task('html', function() {
 		.pipe(debug({title: 'html:'}))
 		.pipe(nunjucksRender({
 			data: {
-				url: 'http://' + domain,
+				url: 'https://' + domain,
 				site: site
 			},
 			path: 'src/'
 		}))
-		.pipe(w3cjs())
-		.pipe(w3cjs.reporter())
 		.pipe(gulp.dest('build'))
 
 });
