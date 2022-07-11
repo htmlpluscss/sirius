@@ -9,6 +9,46 @@
 
 			<div class="img-cover img-cover--fullscreen flexbox flexbox--center flexbox--column flexbox--align-center">
 
+				<iframe src="https://player.vimeo.com/video/540531522?autoplay=1&loop=1&muted=1" width="640" height="360" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+				<script>
+
+					( iframe => {
+
+						const mainResize = ()=> {
+
+							let w = window.innerWidth,
+								h = window.innerHeight;
+console.log(w,h)
+							if ( w < 1250 ) {
+
+								w = 1250 / 2.35;
+								h = iframe.parentNode.clientHeight;
+
+							}
+
+							if ( h / w < 1 / 2.35 ) {
+
+								iframe.style.width = w + 'px';
+								iframe.style.height = w / 16 * 9 + 'px';
+
+							} else {
+
+								iframe.style.width = w * 2.35 + 'px';
+								iframe.style.height = h * 9 / 16 * 2.35 + 'px';
+
+							}
+
+						}
+
+						mainResize();
+
+						window.addEventListener("resize", () => window.requestAnimationFrame( mainResize ));
+
+					})(document.querySelector('.img-cover iframe'));
+
+				</script>
+
 				<div class="center">
 
 					<h1 class="h1">Добро пожаловать в мир продукции Sirius</h1>

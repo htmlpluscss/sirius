@@ -27,104 +27,108 @@
 
 <body class="{{ page }}">
 
-	<header id="header" class="center header clr">
+	<header id="header" class="header">
 
-		<a class="logo pull-left" href="/"><img src="/images/logo.svg" alt=""></a>
+		<div class="center clr">
 
-		<div class="header__cart pull-right">
+			<a class="logo pull-left" href="/"><img src="/images/logo.svg" alt=""></a>
 
-			<a class="ico ico--cart" href="/cart.html" data-counter="1"></a>
+			<div class="header__cart pull-right">
+
+				<a class="ico ico--cart" href="/cart.html" data-counter="1"></a>
+
+			</div>
+
+			<div class="header__search pull-right">
+
+				<a class="ico ico--search" data-alert-up="search"></a>
+
+			</div>
+
+			<nav class="header__menu pull-right">
+
+				<ul class="menu-top">
+
+					<li{% if page == 'about' %} class="menu-top__active"{% endif %}><a href="about.html">Познакомьтесь с SIRIUS</a></li>
+					<li class="{% if page == 'products' or page == 'category' or page == 'product' %}menu-top__active {% endif %}menu-cat-show"><a href="products.html">Продукция</a></li>
+					<li{% if page == 'contacts' %} class="menu-top__active"{% endif %}><a href="contacts.html">Контакты</a></li>
+					<li{% if page == 'service' %} class="menu-top__active"{% endif %}><a href="service.html">Сервис</a></li>
+					<li><a href="">Где купить</a></li>
+
+				</ul>
+
+				<ul class="menu-cat hidden-sm">
+
+					<li>
+						<a href="https://www.sirius-russia.ru/catalog/downdraft">
+							Downdraft
+							<img src="https://www.sirius-russia.ru/img/cat-1.jpg" srcset="img/cat-1--2x.jpg 2x" alt="Вытяжки Sirius встраиваемые в столешницу Downdraft">
+							<i class="ico ico--arrow-right-red"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.sirius-russia.ru/catalog/ceiling">
+							Потолочные
+							<img src="https://www.sirius-russia.ru/img/cat-2.jpg" srcset="img/cat-2--2x.jpg 2x" alt="Вытяжки Sirius встраиваемые в потолок">
+							<i class="ico ico--arrow-right-red"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.sirius-russia.ru/catalog/wall">
+							Настенные
+							<img src="https://www.sirius-russia.ru/img/cat-3.jpg" srcset="img/cat-3--2x.jpg 2x" alt="Вытяжки Sirius с креплением на стене">
+							<i class="ico ico--arrow-right-red"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.sirius-russia.ru/catalog/island">
+							Островные
+							<img src="https://www.sirius-russia.ru/img/cat-4.jpg" srcset="img/cat-4--2x.jpg 2x" alt="Вытяжки Sirius которые вешаются над островом">
+							<i class="ico ico--arrow-right-red"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.sirius-russia.ru/catalog/built_in">
+							Встраиваемые
+							<img src="https://www.sirius-russia.ru/img/cat-5.jpg" srcset="img/cat-5--2x.jpg 2x" alt="Вытяжки Sirius встраиваемые в кухню">
+							<i class="ico ico--arrow-right-red"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.sirius-russia.ru/catalog/hoods_cooktops">
+							Комплекты
+							<img src="https://www.sirius-russia.ru/img/cat-7.jpg" srcset="img/cat-7--2x.jpg 2x" alt="Комплекты - вытяжка + поверхность">
+							<i class="ico ico--arrow-right-red"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.sirius-russia.ru/catalog/lamp">
+							Светильники
+							<img src="https://www.sirius-russia.ru/img/cat-8.jpg" srcset="img/cat-8--2x.jpg 2x" alt="Светильники, люстры, лампы">
+							<i class="ico ico--arrow-right-red"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.sirius-russia.ru/catalog/accessories">
+							Аксессуары
+							<img src="https://www.sirius-russia.ru/img/cat-6.jpg" srcset="img/cat-6--2x.jpg 2x" alt="Аксессуарам к вытяжкам Sirius">
+							<i class="ico ico--arrow-right-red"></i>
+						</a>
+					</li>
+					<li>
+						<a href="https://www.sirius-russia.ru/catalog/accessories">
+							Аксессуары
+							<img src="https://www.sirius-russia.ru/img/cat-6.jpg" srcset="img/cat-6--2x.jpg 2x" alt="Аксессуарам к вытяжкам Sirius">
+							<i class="ico ico--arrow-right-red"></i>
+						</a>
+					</li>
+
+				</ul>
+
+			</nav>
+
+			<a class="menu-mobile-toggle"><i class="menu-mobile-toggle__line"></i></a>
 
 		</div>
-
-		<div class="header__search pull-right">
-
-			<a class="ico ico--search" data-alert-up="search"></a>
-
-		</div>
-
-		<nav class="header__menu pull-right">
-
-			<ul class="menu-top">
-
-				<li{% if page == 'about' %} class="menu-top__active"{% endif %}><a href="about.html">Познакомьтесь с SIRIUS</a></li>
-				<li class="{% if page == 'products' or page == 'category' or page == 'product' %}menu-top__active {% endif %}menu-cat-show"><a href="products.html">Продукция</a></li>
-				<li{% if page == 'contacts' %} class="menu-top__active"{% endif %}><a href="contacts.html">Контакты</a></li>
-				<li{% if page == 'service' %} class="menu-top__active"{% endif %}><a href="service.html">Сервис</a></li>
-				<li><a href="">Где купить</a></li>
-
-			</ul>
-
-			<ul class="menu-cat hidden-sm">
-
-				<li>
-					<a href="https://www.sirius-russia.ru/catalog/downdraft">
-						Downdraft
-						<img src="https://www.sirius-russia.ru/img/cat-1.jpg" srcset="img/cat-1--2x.jpg 2x" alt="Вытяжки Sirius встраиваемые в столешницу Downdraft">
-						<i class="ico ico--arrow-right-red"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.sirius-russia.ru/catalog/ceiling">
-						Потолочные
-						<img src="https://www.sirius-russia.ru/img/cat-2.jpg" srcset="img/cat-2--2x.jpg 2x" alt="Вытяжки Sirius встраиваемые в потолок">
-						<i class="ico ico--arrow-right-red"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.sirius-russia.ru/catalog/wall">
-						Настенные
-						<img src="https://www.sirius-russia.ru/img/cat-3.jpg" srcset="img/cat-3--2x.jpg 2x" alt="Вытяжки Sirius с креплением на стене">
-						<i class="ico ico--arrow-right-red"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.sirius-russia.ru/catalog/island">
-						Островные
-						<img src="https://www.sirius-russia.ru/img/cat-4.jpg" srcset="img/cat-4--2x.jpg 2x" alt="Вытяжки Sirius которые вешаются над островом">
-						<i class="ico ico--arrow-right-red"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.sirius-russia.ru/catalog/built_in">
-						Встраиваемые
-						<img src="https://www.sirius-russia.ru/img/cat-5.jpg" srcset="img/cat-5--2x.jpg 2x" alt="Вытяжки Sirius встраиваемые в кухню">
-						<i class="ico ico--arrow-right-red"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.sirius-russia.ru/catalog/hoods_cooktops">
-						Комплекты
-						<img src="https://www.sirius-russia.ru/img/cat-7.jpg" srcset="img/cat-7--2x.jpg 2x" alt="Комплекты - вытяжка + поверхность">
-						<i class="ico ico--arrow-right-red"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.sirius-russia.ru/catalog/lamp">
-						Светильники
-						<img src="https://www.sirius-russia.ru/img/cat-8.jpg" srcset="img/cat-8--2x.jpg 2x" alt="Светильники, люстры, лампы">
-						<i class="ico ico--arrow-right-red"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.sirius-russia.ru/catalog/accessories">
-						Аксессуары
-						<img src="https://www.sirius-russia.ru/img/cat-6.jpg" srcset="img/cat-6--2x.jpg 2x" alt="Аксессуарам к вытяжкам Sirius">
-						<i class="ico ico--arrow-right-red"></i>
-					</a>
-				</li>
-				<li>
-					<a href="https://www.sirius-russia.ru/catalog/accessories">
-						Аксессуары
-						<img src="https://www.sirius-russia.ru/img/cat-6.jpg" srcset="img/cat-6--2x.jpg 2x" alt="Аксессуарам к вытяжкам Sirius">
-						<i class="ico ico--arrow-right-red"></i>
-					</a>
-				</li>
-
-			</ul>
-
-		</nav>
-
-		<a class="menu-mobile-toggle"><i class="menu-mobile-toggle__line"></i></a>
 
 	</header>
