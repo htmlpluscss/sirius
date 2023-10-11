@@ -159,7 +159,13 @@ http://htmlpluscss.ru
 				var o = select.children(':selected');
 				visible.text(o.text());
 				o.attr('value')=='none' ? select_box.addClass('select--default') : select_box.removeClass('select--default');
-			}).trigger('change');
+			});
+
+			visible.text(select.children(':selected').text());
+
+			if(select.children(':selected').attr('value').length===0) {
+				select_box.addClass('select--default');
+			}
 
 		}
 

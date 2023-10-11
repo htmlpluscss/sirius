@@ -626,14 +626,15 @@ hr {
 	width: 100%;
 }
 .menu-cat a {
-	display: block;
+	display: flex;
+	align-items: center;
 	width: 138px;
 	height: 138px;
 	background: #fff;
 	color: #333;
-	line-height: 22px;
+	line-height: 16px;
 	font-weight: 600;
-	padding: 104px 18px 0;
+	padding: 87px 18px 0;
 }
 .menu-cat .ico {
 	top: auto;
@@ -794,6 +795,24 @@ hr {
 .block-cat__item--4 .block-cat__readmore {
 	color: rgba(255,255,255,.3);
 }
+
+
+/* catalog-filter
+-----------------------------------------------------------------------------*/
+
+.catalog-filter {
+	gap: 10px;
+	flex-wrap: wrap;
+	display: flex;
+	user-select: none;
+	margin: 24px auto;
+}
+.catalog-filter__select{
+	min-width: 64px;
+	max-width: 256px;
+}
+
+
 
 /* map-address
 -----------------------------------------------------------------------------*/
@@ -1869,7 +1888,14 @@ hr {
 	height: 40px;
 }
 .select select {
-	display: none;
+	opacity: 0;
+	height: 40px;
+	max-width: 100%;
+	pointer-events: none;
+	appearance: none;
+	position: absolute;
+	top: 0;
+	left: 0;
 }
 .select__value{
 	cursor: pointer;
@@ -1921,8 +1947,8 @@ hr {
 .select--focus .select__value::before{
 	border-width: 0 4px 4px;
 }
-.select--default .select__text{
-	font-weight: 300;
+.select:not(.select--default) .select__value{
+	border-color: #6b6b6b
 }
 
 
@@ -2844,6 +2870,7 @@ hr {
 .swiper--home {
 
 	background-color: #777;
+	height: 80vh;
 
 }
 
@@ -2911,6 +2938,30 @@ hr {
 .swiper__text-inner:hover {
 	box-shadow: 5px 5px 15px 0px rgba(0,0,0,0.75);
 }
+@media (max-width:960px){
+	.swiper__text-inner {
+		max-width: 70%;
+		width: 100%;
+	}
+}
+@media (max-width:767px){
+	.swiper__text {
+		align-items: flex-start;
+	}
+	.swiper__text-inner {
+		padding: 90px 24px 24px;
+		max-width: 100%;
+	}
+	.swiper__text-title {
+		font-size: 18px;
+	}
+	.swiper__text-desc {
+		font-size: 16px;
+	}
+	.swiper__text-more {
+		font-size: 14px;
+	}
+}
 /**
  * Swiper 10.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -2957,7 +3008,7 @@ hr {
 .swiper-button-prev,
 .swiper-button-next {
 
-	z-index: 10;
+	z-index: 8;
 	cursor: pointer;
 	position: absolute;
 	top: 0;
@@ -2983,7 +3034,7 @@ hr {
 
 .swiper-pagination {
   position: absolute;
-  z-index: 10;
+  z-index: 8;
   left: 0;
   right: 0;
   bottom: 20px;
