@@ -1,12 +1,3 @@
-/* UTF-8
-
-© kovrigin
-Все права разрешены
-красивый дизайн должен иметь красивый код®
-
-http://htmlpluscss.ru
-
-*/
 
 (function($){
 
@@ -284,3 +275,11 @@ http://htmlpluscss.ru
 	})($('.show-room'));
 
 })(jQuery);
+
+document.addEventListener("DOMContentLoaded", ()=>{
+
+	Fancybox.bind('[data-fancybox="gallery"]', {
+	//
+	});
+
+});
