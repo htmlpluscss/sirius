@@ -3,6 +3,10 @@
 
 {% include "_include/header.html" %}
 
+	<link href="/css/filter.css" rel="stylesheet">
+	<script defer src="/js/nouislider.min.js"></script>
+	<script defer src="/js/filter.js"></script>
+
 	<main class="main">
 
 		<article>
@@ -33,48 +37,9 @@
 
 			</div>
 
-			<form action="products.html" class="catalog-filter center" onchange="this.submit()">
+{% include "_include/filter-fast.html" %}
 
-				<input type="hidden" name="sysname" value="devices_for_fish">
-				<input type="hidden" name="sysname2" value="design_aladdin">
-
-				<div class="catalog-filter__select">
-
-					<select name="ATTR[240]">
-						<option value="">Упаковка</option>
-						<option selected="selected" value="2277">нет</option>
-					</select>
-
-				</div>
-
-				<div class="catalog-filter__select">
-
-					<select name="ATTR[239]">
-						<option value="">Количество приборов</option>
-						<option value="2076">1</option>
-					</select>
-
-				</div>
-
-				<div class="catalog-filter__select">
-
-					<select name="ATTR[238]">
-						<option value="">Кольцо</option>
-						<option value="2044">состаренное серебро</option>
-					</select>
-
-				</div>
-
-				<div class="catalog-filter__select">
-
-					<select name="ATTR[154]">
-						<option value="">Цвет</option>
-						<option value="505">Синий</option>
-					</select>
-
-				</div>
-
-			</form>
+{% include "_include/filter-modal.html" %}
 
 			<ul class="cat-img3 center clr">
 
@@ -83,7 +48,6 @@
 						<img class="cat-img3__img" src="img/category-1.jpg" srcset="img/category-1--2x.jpg 2x" alt="">
 						<span class="cat-img3__name">
 							Downdraft
-							<i class="ico ico--arrow-right-red"></i>
 						</span>
 					</a>
 				</li>
@@ -92,7 +56,6 @@
 						<img class="cat-img3__img" src="img/category-2.jpg" srcset="img/category-2--2x.jpg 2x" alt="">
 						<span class="cat-img3__name">
 							Потолочные
-							<i class="ico ico--arrow-right-red"></i>
 						</span>
 					</a>
 				</li>
@@ -101,7 +64,6 @@
 						<img class="cat-img3__img" src="img/category-3.jpg" srcset="img/category-3--2x.jpg 2x" alt="">
 						<span class="cat-img3__name">
 							Настенные
-							<i class="ico ico--arrow-right-red"></i>
 						</span>
 					</a>
 				</li>
@@ -110,7 +72,6 @@
 						<img class="cat-img3__img" src="img/category-4.jpg" srcset="img/category-4--2x.jpg 2x" alt="">
 						<span class="cat-img3__name">
 							Островные
-							<i class="ico ico--arrow-right-red"></i>
 						</span>
 					</a>
 				</li>
@@ -119,7 +80,6 @@
 						<img class="cat-img3__img" src="img/category-5.jpg" srcset="img/category-5--2x.jpg 2x" alt="">
 						<span class="cat-img3__name">
 							Встраиваемые
-							<i class="ico ico--arrow-right-red"></i>
 						</span>
 					</a>
 				</li>
@@ -128,7 +88,6 @@
 						<img class="cat-img3__img" src="img/category-6.jpg" srcset="img/category-6--2x.jpg 2x" alt="">
 						<span class="cat-img3__name">
 							Аксессуары
-							<i class="ico ico--arrow-right-red"></i>
 						</span>
 					</a>
 				</li>
@@ -136,6 +95,8 @@
 			</ul>
 
 		</article>
+
+{% include "_include/faq.html" %}
 
 	</main>
 

@@ -16,7 +16,7 @@ const w3cjs            = require('gulp-w3cjs');
 
 const config             = require('./config.json');
 const site             = 'sirius-russia.ru';
-const domain           = 'sirius.htmlpluscss.website';
+const domain           = 'sirius.htmlpluscss.site';
 
 config.ftp.remotePath += domain;
 
