@@ -1109,9 +1109,27 @@ hr {
 	right: 6px;
 	top: 7px;
 }
-.cat-img3__price {
+.cat-img3__available {
 	position: absolute;
 	bottom: 14px;
+	right: 14px;
+	z-index: 1;
+	font-size: 14px;
+	color: #000;
+	font-weight: 400;
+	padding: 2px 10px;
+	background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 100px);
+	text-transform: lowercase;
+	border-right: 1px solid green;
+	border-bottom: 1px solid green;
+}
+.is-unavailable {
+	border-right: 1px solid red;
+	border-bottom: 1px solid red;
+}
+.cat-img3__price {
+	position: absolute;
+	bottom: 52px;
 	right: 14px;
 	z-index: 1;
 	font-size: 18px;
