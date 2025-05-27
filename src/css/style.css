@@ -3252,6 +3252,20 @@ hr {
 }
 
 
+.link {
+
+	text-decoration: underline
+
+}
+
+.link:hover {
+
+	cursor: pointer;
+
+	text-decoration: none;
+
+}
+
 /* checkbox */
 
 .checkbox {
@@ -3372,4 +3386,212 @@ hr {
 
 .checkbox--error .checkbox__label::before {
   border-color: #f00 !important;
+}
+
+
+/* reviwe */
+
+.form-review hr {
+
+			margin: 24px 0;
+
+		}
+
+.form-review__text {
+
+			font-weight: 500;
+			font-size: 16px;
+			margin: 0 !important;
+			text-align: center;
+
+		}
+
+.form-review__fieldsest {
+
+			display: flex;
+			justify-content: space-between;
+			margin: 20px 0;
+
+		}
+
+.form-review__col {
+
+			width: calc(50% - 10px);
+
+}
+
+.form-review .input {
+
+	padding: 10px;
+
+}
+.form-review .input  + input {
+
+	margin-top: 20px;
+
+}
+
+.form-review textarea.input {
+
+			height: 100px;
+
+}
+
+.form-review__checkbox {
+
+			display: flex;
+			justify-content: center;
+
+}
+
+.form-review__btn {
+
+			margin-top: 24px;
+			display: flex;
+			justify-content: center;
+
+}
+
+.form-review__raiting {
+
+			margin: 24px 0;
+			display: flex;
+			justify-content: center;
+
+}
+
+.checkbox-raiting {
+
+	display: block;
+	position: relative;
+	width: 24px;
+	height: 24px;
+	cursor: pointer;
+
+}
+
+.checkbox-raiting-box {
+
+		display: flex;
+		gap: 8px;
+
+	}
+
+.checkbox-raiting.is-checked svg {
+
+	fill: #b20712;
+
+	color: #b20712;
+
+}
+
+.checkbox-raiting svg {
+
+		pointer-events: none;
+		fill: none;
+
+}
+
+.checkbox-raiting__input {
+
+		position: absolute;
+		width: 24px;
+		height: 24px;
+		top: 0;
+		left: 0;
+		appearance: none;
+		cursor: pointer;
+
+}
+
+.review__item {
+
+			padding: 20px 30px;
+			border-radius: 5px;
+			margin: 24px 0;
+			border: 1px solid #fff;
+			box-shadow: 1px 1px 1px rgba(0,0,0,.12), inset 1px 1px 1px rgba(0,0,0,.12);
+
+}
+
+.review__item + .review__item {
+
+		margin-top: 16px;
+		padding-top: 16px;
+		border-top: 1px solid #dedede;
+
+}
+
+.review__author {
+
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+
+}
+
+.review__shop {
+
+		margin-top: 12px;
+
+}
+
+.review__raiting {
+
+		width: 120px;
+		height: 24px;
+		overflow: hidden;
+		text-indent: 100vw;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='24' viewBox='0 0 240 24' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='s'%3E%3Cpath stroke='%23b20712' stroke-width='1.5' d='M11.049 2.927c.3-.922 1.603-.922 1.902 0L14.47 7.6a1 1 0 0 0 .95.69h4.915c.97 0 1.372 1.24.588 1.81l-3.976 2.888a1 1 0 0 0-.363 1.118l1.519 4.675c.299.92-.756 1.687-1.54 1.117l-3.975-2.888a1 1 0 0 0-1.176 0L7.436 19.9c-.783.569-1.838-.197-1.539-1.118l1.519-4.675a1 1 0 0 0-.363-1.117L3.077 10.1c-.784-.569-.381-1.808.588-1.808h4.914A1 1 0 0 0 9.53 7.6l1.519-4.674Z'/%3E%3C/g%3E%3Cg fill='%23b20712'%3E%3Cuse x='0' xlink:href='%23s'/%3E%3Cuse x='24' xlink:href='%23s'/%3E%3Cuse x='48' xlink:href='%23s'/%3E%3Cuse x='72' xlink:href='%23s'/%3E%3Cuse x='96' xlink:href='%23s'/%3E%3C/g%3E%3Cg fill='%23fff'%3E%3Cuse x='120' xlink:href='%23s'/%3E%3Cuse x='144' xlink:href='%23s'/%3E%3Cuse x='168' xlink:href='%23s'/%3E%3Cuse x='192' xlink:href='%23s'/%3E%3C/g%3E%3C/svg%3E");
+
+}
+
+.review__raiting[data-raiting="1"] {
+
+	background-position: -96px 0;
+
+}
+
+.review__raiting[data-raiting="2"] {
+
+	background-position: -72px 0;
+
+}
+
+.review__raiting[data-raiting="3"] {
+
+	background-position: -48px 0;
+
+}
+
+.review__raiting[data-raiting="4"] {
+
+	background-position: -24px 0;
+
+}
+
+
+@media (max-width: 767px) {
+
+
+	.form-review__fieldsest {
+
+		display: block;
+
+	}
+
+	.form-review__col {
+
+		width: 100%;
+
+		margin-bottom: 20px;
+
+	}
+
+	.review__item {
+
+			padding: 16px;
+
+	}
 }

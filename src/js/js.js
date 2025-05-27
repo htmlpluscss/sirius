@@ -274,6 +274,52 @@
 
 	})($('.show-room'));
 
+	( form => {
+
+		// форма с рейтингом
+
+		if ( form ) {
+
+			getRatio = (stars,value) => [...stars].findIndex( star => star.querySelector('.checkbox-raiting__input').value == value) + 1;
+
+			const raitingBox = form.querySelector('.checkbox-raiting-box'),
+				  stars = form.querySelectorAll('.checkbox-raiting'),
+				  nameRaiting = form.querySelector('.checkbox-raiting__input').name;
+
+			let raiting = getRatio(stars,form.elements[nameRaiting].value);
+
+			form.addEventListener('change', ()=> {
+
+				raiting = getRatio(stars,form.elements[nameRaiting].value);
+
+				if ( raiting ) {
+
+					[...stars].forEach( (star,value) => star.classList.toggle('is-checked', value < raiting) );
+
+				}
+
+			});
+
+			[...stars].forEach( (star,index) => {
+
+				star.addEventListener('mouseenter',()=>{
+
+					[...stars].forEach( (star,value) => star.classList.toggle('is-checked', value <= index) );
+
+				});
+
+			});
+
+			raitingBox.addEventListener('mouseleave',()=>{
+
+				[...stars].forEach( (star,value) => star.classList.toggle('is-checked', raiting && value < raiting) );
+
+			});
+
+		}
+
+	})(document.querySelector('.form-review__form'));
+
 })(jQuery);
 
 document.addEventListener("DOMContentLoaded", ()=>{
