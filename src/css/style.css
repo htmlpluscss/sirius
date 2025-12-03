@@ -1469,6 +1469,7 @@ hr {
 .product__img-big img{
 	width: 100%;
 	height: 100%;
+	max-height: 50vh;
 	object-fit: contain;
 }
 .product__img-list {
@@ -1498,6 +1499,16 @@ hr {
 }
 
 
+
+.product__sku {
+	font-size: 10px;
+	line-height: 22px;
+	color: #b5b7bd;
+}
+.product__sku b {
+	font-size: 12px;
+	color: #363b49;
+}
 .product__name {
 	color: #363b49;
 }
