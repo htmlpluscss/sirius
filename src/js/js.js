@@ -110,6 +110,15 @@
 			nav.children('.tabs__dt--active').length > 0 ?
 				nav.children('.tabs__dt--active').triggerHandler('click') :
 				nav.children().first().triggerHandler('click');
+
+			window.addEventListener("hashchange", function () {
+				const hash = window.location.hash;
+				const el = document.querySelector('[data-hash="'+hash+'"]');
+			    if (el) {
+			        el.click();
+			        el.scrollIntoView({ behavior: "smooth" });
+			    }
+			});
 		}
 
 		return this.each(tab);
