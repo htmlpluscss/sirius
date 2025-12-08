@@ -113,7 +113,7 @@
 
 			window.addEventListener("hashchange", function () {
 				const hash = window.location.hash;
-				const el = document.querySelector('[data-hash="'+hash+'"]');
+				const el = [...document.querySelectorAll('[data-hash="' + hash + '"]')].find(el => el.offsetParent !== null);
 			    if (el) {
 			        el.click();
 			        el.scrollIntoView({ behavior: "smooth" });
