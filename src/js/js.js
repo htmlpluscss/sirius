@@ -1,3 +1,48 @@
+( swipers => {
+
+	if(swipers.length) {
+
+		const script = document.createElement('script');
+
+		script.src = '/js/swiper-bundle.min.js';
+
+		script.onload = () => {
+
+			new Swiper(".swiper--home", {
+				loop: true,
+				effect: "fade",
+				autoplay: {
+					delay: 5000,
+				},
+				navigation: {
+					nextEl: ".swiper--home .swiper-button-next",
+					prevEl: ".swiper--home .swiper-button-prev",
+				},
+				pagination: {
+					el: ".swiper-pagination",
+					clickable: true,
+				},
+			});
+
+			new Swiper(".swiper--cat", {
+				loop: true,
+				loopAdditionalSlides: 10,
+				watchSlidesProgress: true,
+				slidesPerView: "auto",
+				navigation: {
+					nextEl: ".block-cat__body .swiper-button-next",
+					prevEl: ".block-cat__body .swiper-button-prev",
+				}
+			});
+
+		};
+
+		document.head.appendChild(script);
+
+	}
+
+})(document.querySelectorAll('.swiper'));
+
 
 (function($){
 
@@ -333,7 +378,7 @@
 
 document.addEventListener("DOMContentLoaded", ()=>{
 
-	Fancybox.bind('[data-fancybox="gallery"]', {
+	Fancybox.bind('[data-fancybox]', {
 	//
 	});
 

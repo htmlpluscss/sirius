@@ -34,74 +34,89 @@
 
 					<hr>
 
-					<form class="filter-form clr">
-<!-- если выбран город то у ссылки btn-white--active отсутствует -->
-						<a href="service.html" class="btn-white pull-left btn-white--active">Все города</a>
+					<ul class="contact-block-columns">
 
-						<div class="select pull-left">
 
-							<select>
-								<option value="none">Выберите город</option>
-								<option value="1">Москва</option>
-								<option value="2">Санкт-Петербург</option>
-								<option value="3">Иваново</option>
-							</select>
-
-						</div>
-
-						<label class="btn btn--red pull-left">Показать<input type="submit"></label>
-
-					</form>
-
-					<hr>
-
-					<div class="contact-block">
-
+						<li class="contact-block">
 						<h3 class="h3">Москва</h3>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--geo"></i>Адрес</span>
+								ООО «АЛФА Сервис» <br> ул. Сайкина, д. 9/1
+							</p>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--tel"></i>Телефон</span>
+								<a class="contact-block__tel" href="tel:+74953633808">+7 (495) 363-38-08</a>
+							</p>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--clock"></i>Время работы</span>
+								Пн - Пт с 10:00 до 20:00, Сб - 10:00 до 17-00, Вс - 11:00 до 15:00 (в летнее время с 1 июня по 31 августа воскресенье выходной)
+							</p>
+						</li>
 
-						<ul class="clr">
-
-{% include "_include/service.html" %}
-{% include "_include/service.html" %}
-{% include "_include/service.html" %}
-{% include "_include/service.html" %}
-{% include "_include/service.html" %}
-
-						</ul>
-
-					</div>
-
-					<hr>
-
-					<div class="contact-block">
+						<li class="contact-block">
 
 						<h3 class="h3">Санкт-Петербург</h3>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--geo"></i>Адрес</span>
+								ООО "Альбатрос-Сервис" <br> ул. Седова, д. 37
+							</p>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--tel"></i>Телефон</span>
+								<a class="contact-block__tel" href="tel:+78126425105">+7 (812) 642-51-05</a>
+							</p>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--clock"></i>Время работы</span>
+								Пн - Пт с 10:00 до 19:00
+							</p>
+							<br><p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--mail"></i>Электронная почта</span>
+								<a class="contact-block__mail" href="mailto:service_sedova37@albatrosswrvice.ru">service_sedova37@albatrosswrvice.ru</a>
+							</p>
+						</li>
 
-						<ul class="clr">
+						<li class="contact-block">
+						<h3 class="h3">Ставрополь</h3>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--geo"></i>Адрес</span>
+								ООО "Техно-Сервис" <br> ул. 7-я Промышленная, д. 6
+							</p>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--tel"></i>Телефон</span>
+								<a class="contact-block__tel" href="tel:+7652393030">8 (652) 39-30-30</a>
+							</p>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--clock"></i>Время работы</span>
+								Пн - Пт с 08:00 до 17:00, Сб с 08:00 до 13:00
+							</p>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--mail"></i>Электронная почта</span>
+								<a class="contact-block__mail" href="mailto:technoservice26@mail.ru">technoservice26@mail.ru</a>
+							</p>
+						</li>
 
-{% include "_include/service.html" %}
-{% include "_include/service.html" %}
-{% include "_include/service.html" %}
-{% include "_include/service.html" %}
 
-						</ul>
+						<li class="contact-block">
+						<h3 class="h3">Тольятти</h3>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--geo"></i>Адрес</span>
+								СолоМон Сервис <br> ул. Карла Маркса, д. 44А
+							</p>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--tel"></i>Телефон</span>
+								<a class="contact-block__tel" href="tel:88002221982">8 (800) 222-19-82</a>
+							</p>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--clock"></i>Время работы</span>
+								Пн - Пт с 09:00 до 18:00
+							</p><br>
+							<p class="contact-block__text">
+								<span class="contact-block__label"><i class="ico ico--mail"></i>Электронная почта</span>
+								<a class="contact-block__mail" href="mailto:info@solomon-service.ru">info@solomon-service.ru</a>
+							</p>
+						</li>
 
-					</div>
 
-					<hr>
-
-					<div class="contact-block">
-
-						<h3 class="h3">Иваново</h3>
-
-						<ul class="clr">
-
-{% include "_include/service.html" %}
-{% include "_include/service.html" %}
-
-						</ul>
-
-					</div>
+					</ul>
 
 				</div>
 
